@@ -1,4 +1,4 @@
-import { parksSelector } from './parks/parksSelect.js'
+import { parksSelector } from './parks/ParkSelector.js'
 import {getEateries} from "./eateries/EateryProvider.js"
 import {renderEateryDropdown} from "./eateries/EateryList.js"
 
