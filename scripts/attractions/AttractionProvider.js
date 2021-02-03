@@ -1,4 +1,5 @@
 let attractionList = [];
+// let attractionVar = '';
 
 export const useAttractions = () => attractionList.slice();
 
@@ -9,3 +10,11 @@ export const getAttractions = () => {
         attractionList = attractionsReturned
     })
 };
+
+export const parseAttractions = () => {
+    let attractionVar = '';
+    getAttractions().then(() => {
+        attractionVar = useAttractions();
+        return attractionVar
+    })
+}
