@@ -13,8 +13,8 @@ export const eateryDetails = (eatery) => {
     <section>
     <h3>${eatery.businessName}</h3>
     <h4>${eatery.city}, ${eatery.state}</h4>
-    <div id="details-container">
-    <button class="detail-button" id="detail-button--${eatery.id}">Details..</button>
+    <div id="details-container-eatery">
+    <button class="eatery-detail-button" id="eatery-detail-button--${eatery.id}">Details..</button>
     </div>
     </section>`
     
@@ -23,7 +23,7 @@ export const eateryDetails = (eatery) => {
 }
 
 export const eateryDescription = (pickedEatery) => {
-  document.querySelector("#details-container").innerHTML = `
+  document.querySelector("#details-container-eatery").innerHTML = `
   <p>${pickedEatery.description}</p>
   `
 }

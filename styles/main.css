@@ -38,7 +38,14 @@ button {
   background-color: var(--dark-sea-green-2) !important;
 }
 
-.image-container {
+.parks-image-container {
+  overflow: hidden;
+
   
-  height: 30px;
+}
+
+.parks-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: center; */
 }

@@ -25,7 +25,7 @@ const getEateryDetails = (id) => {
   
 })}
 
-document.querySelector("#eateries-dropdown").addEventListener("click", () => {
+document.querySelector("#eateries-dropdown").addEventListener("click", event => {
   getEateryDetails(event.target.id).then(() => {
     eateryDetails(eateryObject)
   })
@@ -33,9 +33,10 @@ document.querySelector("#eateries-dropdown").addEventListener("click", () => {
 
 
 
-  document.querySelector("main").addEventListener("click", () => {
-   if(event.target.classList.contains("detail-button")) {
-    let id = event.target.id.slice(15)
+  document.querySelector("main").addEventListener("click", event => {
+
+   if(event.target.id.includes("eatery")) {
+    let id = event.target.id.split("--")[1]
     getEateryDetails(id).then(() => {
       eateryDescription(eateryObject);
     })
