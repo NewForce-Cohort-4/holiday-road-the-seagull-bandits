@@ -38,3 +38,7 @@ button {
   background-color: var(--dark-sea-green-2) !important;
 }
 
+.image-container {
+  
+  height: 30px;
+}
