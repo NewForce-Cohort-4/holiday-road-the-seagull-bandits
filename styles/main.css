@@ -1,0 +1,20 @@
+
+
+* {
+  /* CSS HEX */
+--white: #ffffffff;
+--tan: #ddbc97ff;
+--dark-sea-green: #a1c097ff;
+--dark-sea-green-2: #7eaf81ff;
+  /* border: 1px solid black; */
+}
+
+.itinerary-section {
+  border-right: 1px solid black;
+  border-left: 1px solid gray;
+  background-color: var(--dark-sea-green) ;
+}
+
+button {
+  background-color: #DDBC97 !important;
+}

@@ -1,7 +1,7 @@
 import { loadParksData, useParks } from './parks/ParkProvider.js'
 
 loadParksData().then(() => {
-   let parks = useParks();
+    let parks = useParks();
     console.log(parks)
     // const convictingOfficers = parks.map(perp => {return perp.arrestingOfficer})
     // const crimes = parks.map(perp => { return perp.conviction})
