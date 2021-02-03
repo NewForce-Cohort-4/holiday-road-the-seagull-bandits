@@ -9,12 +9,32 @@
   /* border: 1px solid black; */
 }
 
+body {
+  background-color: var(--dark-sea-green);
+}
+
+.banner-top {
+  height: 25vh;
+  background-color: var(--tan);
+  border-color: var(--dark-sea-green-2) !important;
+}
+
+.hero-img {
+  min-height: 35rem !important;
+  min-width: 75rem !important;
+}
+
 .itinerary-section {
-  border-right: 1px solid black;
-  border-left: 1px solid gray;
+  /* border-right: 1px solid black;
+  border-left: 1px solid gray; */
   background-color: var(--dark-sea-green) ;
 }
 
-button {
-  background-color: #DDBC97 !important;
+.data-col {
+  background-color: var();
 }
+
+button {
+  background-color: var(--dark-sea-green-2) !important;
+}
+
