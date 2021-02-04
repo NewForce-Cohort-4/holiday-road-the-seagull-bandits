@@ -1,4 +1,4 @@
-
+/* Universal Selector */
 
 * {
   /* CSS HEX */
@@ -9,20 +9,38 @@
   /* border: 1px solid black; */
 }
 
+/* Body Selector */
+
 body {
   background-color: var(--dark-sea-green);
 }
 
+/* Header span */
+
 .banner-top {
-  height: 25vh;
+  height: 30vh;
+  min-height: 11rem;
+  max-height: 14rem;
   background-color: var(--tan);
   border-color: var(--dark-sea-green-2) !important;
 }
 
-.hero-img {
+#header-logo {
+  z-index: 2;
+}
+
+#header-banner {
+  z-index: 1;
   min-height: 35rem !important;
   min-width: 75rem !important;
+  margin-top: -25rem;
 }
+
+#logo-badge {
+  height: 10rem;
+}
+
+/* Column Selectors */
 
 .itinerary-section {
   /* border-right: 1px solid black;
@@ -30,15 +48,30 @@ body {
   background-color: var(--dark-sea-green) ;
 }
 
+.scrollable-menu {
+  height: auto;
+  max-height: 55vh;
+  overflow-x: hidden;
+  background-color: var(--dark-sea-green-2);
+  
+}
+
 .data-col {
   background-color: var();
 }
 
-button {
+.col-button {
   background-color: var(--dark-sea-green-2) !important;
 }
 
-.image-container {
+.parks-image-container {
+  overflow: hidden;
+
   
-  height: 30px;
+}
+
+.parks-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: center; */
 }

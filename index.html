@@ -14,17 +14,17 @@
   <body>
     <!-- Begin Header -->
     <main class="container-auto mx-0">
-      <header class="row py-3 border border-5 border-bottom border-top-0 overflow-hidden banner-top">
+      <header class="container-auto py-3 border border-5 border-bottom border-top-0 overflow-hidden banner-top">
        
-        <div class="z-header">
-          <div class="position-relative z-index-2">
-            <img src="./images/seagull-logo.png" alt="" class="img-fluid" />
+        <div class="z-header position-sticky">
+          <div class="position-relative" id="header-logo">
+            <img src="./images/seagull-logo-round.png" alt="" class="img-fluid ms-5 mt-1" id="logo-badge"/>
           </div>
-          <div class="position-relative z-index-1 bottom-50">
+          <div class="position-relative" id="header-banner">
             <img
                 src="./images/park-header.png"
                 alt=""
-                class="img-fluid hero-img"
+                class="img-fluid"
             />
           </div>
         </div>
@@ -37,16 +37,16 @@
           <div class="col-lg-4 col-sm-12 py-3 text-center itinerary-section data-col">
             <div class="dropdown">
               <button
-                class="btn btn-secondary w-100 dropdown-toggle mb-3"
+                class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
                 type="button"
-                id="dropdownMenuButton"
+                id="parksMenuButton"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 National Parks
               </button>
               <ul
-                class="dropdown-menu w-100"
+                class="dropdown-menu w-100 scrollable-menu"
                 aria-labelledby="dropdownMenuButton"
                 id="park-dropdown"
               >
@@ -54,10 +54,10 @@
               </ul>
             </div>
             <div id="park-container">
-              <!-- <img
+              <img class='w-100'
                 src="https://generative-placeholders.glitch.me/image?width=300&height=600&style=cellular-automata&cells=80"
                 alt=""
-              /> -->
+              />
             </div>
           </div>
 
@@ -65,18 +65,19 @@
           <div class="col-lg-4 col-sm-12 py-3 text-center itinerary-section data-col">
             <div class="dropdown">
               <button
-                class="btn btn-secondary w-100 dropdown-toggle mb-3"
+                class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
                 type="button"
-                id="dropdownMenuButton"
+                id="bizMenuButton"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Bizarraries
               </button>
               <ul
-                class="dropdown-menu w-100"
+                class="dropdown-menu w-100 scrollable-menu" 
                 aria-labelledby="dropdownMenuButton"
                 id="biz-dropdown"
+                role="menu"
               >
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -98,16 +99,16 @@
           <div class="col-lg-4 col-sm-12 py-3 text-center itinerary-section data-col">
             <div class="dropdown">
               <button
-                class="btn btn-secondary w-100 dropdown-toggle mb-3"
+                class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
                 type="button"
-                id="dropdownMenuButton"
+                id="eatMenuButton"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Eateries
               </button>
               <ul
-                class="dropdown-menu w-100"
+                class="dropdown-menu w-100 scrollable-menu"
                 aria-labelledby="dropdownMenuButton"
                 id="eateries-dropdown"
               >
