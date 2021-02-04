@@ -2,6 +2,8 @@
 /* import functions from other modules */
 import { getParks, useParks } from './ParkProvider.js'
 import { parkHTML, parkDetails } from './Park.js'
+import { buildItinerary } from "./../itineraries/ItineraryProvider.js"
+
 
 const contentTarget = document.querySelector("#park-dropdown")
 
@@ -43,6 +45,18 @@ eventHub.addEventListener("click", eventObject => {
 
         // Pass selected park's location into the weather forecast function
         // weatherApp(selectedPark.addresses[0])
+
+        // Pass selected park into the saved itinerary object
+        const savedPark = {
+            name: selectedPark.fullName,
+            parkCode: selectedPark.parkCode,
+            description: selectedPark.description,
+            latitude: selectedPark.latitude,
+            longitude: selectedPark.longitude,
+            states: selectedPark.states,
+            images: selectedPark.images,
+        }
+        buildItinerary(savedPark, 'park')
     }
 
     // if the park's detail button is engaged...

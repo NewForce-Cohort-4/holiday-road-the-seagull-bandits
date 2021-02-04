@@ -1,5 +1,7 @@
 import { getEateries, useEateries } from "./EateryProvider.js";
 import {eatery, eateryDescription, eateryDetails} from "./Eatery.js"
+import { buildItinerary } from "./../itineraries/ItineraryProvider.js"
+
 const eateryDropdownSelector = document.querySelector("#eateries-dropdown");
 
 export const renderEateryDropdown = () => {
@@ -28,6 +30,7 @@ const getEateryDetails = (id) => {
 document.querySelector("#eateries-dropdown").addEventListener("click", event => {
   getEateryDetails(event.target.id).then(() => {
     eateryDetails(eateryObject)
+    buildItinerary(eateryObject, 'eatery')
   })
   })
 
