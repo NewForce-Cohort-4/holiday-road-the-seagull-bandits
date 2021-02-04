@@ -1,5 +1,6 @@
 import { getParks, useParks } from './ParkProvider.js'
 import { parkHTML } from './parkItineraryItem.js'
+import { getWeather, weatherList } from '../weather/WeatherProvider.js'
 
 const contentTarget = document.querySelector("#park-dropdown")
 
@@ -38,5 +39,10 @@ eventHub.addEventListener("click", eventObject => {
     if (eventObject.target.id.includes("np-select")) {
         const parkCode = eventObject.target.id.split("_")[1]
         parkHTML(allParks.filter(park => park.parkCode === parkCode)[0])// print to card
+        
+        weatherList(
+          allParks.filter((park) => park.parkCode === parkCode)[0].latitude,
+          allParks.filter((park) => park.parkCode === parkCode)[0].longitude
+        );
     }
 })
