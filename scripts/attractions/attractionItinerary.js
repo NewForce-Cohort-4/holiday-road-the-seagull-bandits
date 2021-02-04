@@ -1,4 +1,5 @@
 import { getAttractions, useAttractions, parseAttractions } from "./AttractionProvider.js";
+import {  } from "./AttractionSelect.js";
 import { printBizContent } from "./attraction.js";
 
 const bizContainer = document.getElementById("biz-container")
@@ -12,7 +13,7 @@ export const findAttraction = () => {
 };
 
 export const makeAttraction = (selectedAttraction) => {
-    findAttraction();
+    // findAttraction();
     for (const singleAttract of attractions) {
         if (selectedAttraction.target.id === `biz-${singleAttract.id}`) {
             bizContainer.innerHTML = printBizContent(singleAttract)

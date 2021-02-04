@@ -1,4 +1,4 @@
-
+/* Universal Selector */
 
 * {
   /* CSS HEX */
@@ -9,16 +9,20 @@
   /* border: 1px solid black; */
 }
 
+/* Body Selector */
+
 body {
   background-color: var(--dark-sea-green);
 }
 
+/* Header span */
+
 .banner-top {
   height: 30vh;
-  background-color: var(--tan);
-  border-color: var(--dark-sea-green-2) !important;
   min-height: 11rem;
   max-height: 14rem;
+  background-color: var(--tan);
+  border-color: var(--dark-sea-green-2) !important;
 }
 
 #header-logo {
@@ -36,10 +40,7 @@ body {
   height: 10rem;
 }
 
-/* .hero-img {
-  min-height: 35rem !important;
-  min-width: 75rem !important;
-} */
+/* Column Selectors */
 
 .itinerary-section {
   /* border-right: 1px solid black;
@@ -49,7 +50,7 @@ body {
 
 .scrollable-menu {
   height: auto;
-  max-height: 45rem;
+  max-height: 55vh;
   overflow-x: hidden;
   background-color: var(--dark-sea-green-2);
   
@@ -62,4 +63,3 @@ body {
 .col-button {
   background-color: var(--dark-sea-green-2) !important;
 }
-
