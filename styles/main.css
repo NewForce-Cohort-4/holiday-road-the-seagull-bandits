@@ -14,15 +14,30 @@ body {
 }
 
 .banner-top {
-  height: 25vh;
+  height: 30vh;
   background-color: var(--tan);
   border-color: var(--dark-sea-green-2) !important;
 }
 
-.hero-img {
+#header-logo {
+  z-index: 2;
+}
+
+#header-banner {
+  z-index: 1;
   min-height: 35rem !important;
   min-width: 75rem !important;
+  margin-top: -25rem;
 }
+
+#logo-badge {
+  height: 10rem;
+}
+
+/* .hero-img {
+  min-height: 35rem !important;
+  min-width: 75rem !important;
+} */
 
 .itinerary-section {
   /* border-right: 1px solid black;
