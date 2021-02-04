@@ -63,3 +63,15 @@ body {
 .col-button {
   background-color: var(--dark-sea-green-2) !important;
 }
+
+.parks-image-container {
+  overflow: hidden;
+
+  
+}
+
+.parks-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: center; */
+}
