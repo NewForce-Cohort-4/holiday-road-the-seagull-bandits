@@ -21,6 +21,9 @@ const roadTrip = (destinationsArray) => {
     
 };
 
+let stops = ["Nashville","New River Gorge National Park and Preserve", "Big Bend National Park", "White House Replica"]
+roadTrip(stops);
+
 // Archivied
 
 // const roundTrip = (pointString) => {
@@ -37,7 +40,4 @@ const roadTrip = (destinationsArray) => {
 //     return tripPoints
 // };
 
-let stops = ["Nashville","New River Gorge National Park and Preserve", "Big Bend National Park"]
-
-roadTrip(stops);
 
