@@ -1,42 +1,24 @@
 import { findLocation, workingLocation, locationRoute, routeReturned } from "./DirectionProvider.js";
 
 
-const roundTrip = (pointStart, pointEnd) => {
-    let tripPoints = [];
+const roadTrip = (destinationsArray) => {
+    // let tripPoints = [];
     let destinationQuery = "";
-    let finalDestination = "";
-    findLocation(pointStart).then(() => {
-        destinationQuery = workingLocation();
-        // debugger
-    })
-    .then(() => {
-        console.log(destinationQuery[0].point.lat, destinationQuery[0].point.lng);
-        tripPoints.push(destinationQuery[0].point);
-    })
-    .then(() => {
-        // destinationQuery = ``;
-        findLocation(pointEnd).then(() => {
-            destinationQuery = workingLocation();
-            // debugger
-        })
-        .then(() => {
-            console.log(destinationQuery[0].point.lat, destinationQuery[0].point.lng);
-            tripPoints.splice(1, 0, destinationQuery[0].point);
-            console.log(tripPoints);
-            
-            // debugger
-        })
+	let finalDestination = "";
+	
+		findLocation(destinationsArray)
+		.then(() => {
+			destinationQuery = workingLocation();
+		})
         .then(() => {
             // console.log(tripPoints);
-            locationRoute(tripPoints).then(() => {
+            locationRoute(destinationQuery).then(() => {
                 finalDestination = routeReturned
                 console.log(finalDestination);
-                // debugger
                 return finalDestination
             })
         })
-    })
-
+    
 };
 
 // Archivied
@@ -55,24 +37,7 @@ const roundTrip = (pointStart, pointEnd) => {
 //     return tripPoints
 // };
 
+let stops = ["Nashville","New River Gorge National Park and Preserve", "Big Bend National Park"]
 
-let testTrip = roundTrip("New River Gorge National Park and Preserve", "Big Bend National Park");
-console.log(testTrip);
-
-// roundTrip("Joshua Tree National Park", "Death Valley");
-// debugger
-// debugger
-// console.log(tripPoints);
-// debugger
-// console.log(tripPoints[0].lx);
-// debugger
-// console.log(tripPoints);
-
-// locationRoute(tripPoints)
-
-
-// findLocation("Joshua Tree National Park").then(() => {
-//     let destinationQuery = workingLocation();
-//     console.log(destinationQuery);
-// })
+roadTrip(stops);
 
