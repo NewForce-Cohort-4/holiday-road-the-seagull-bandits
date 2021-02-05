@@ -3,7 +3,7 @@
 import { getParks, useParks } from './ParkProvider.js'
 import { parkHTML, parkDetails } from './Park.js'
 import { buildItinerary } from "./../itineraries/ItineraryProvider.js"
-
+import {weatherList} from "../weather/WeatherProvider.js"
 
 const contentTarget = document.querySelector("#park-dropdown")
 
@@ -56,7 +56,11 @@ eventHub.addEventListener("click", eventObject => {
             states: selectedPark.states,
             images: selectedPark.images,
         }
+        
         buildItinerary(savedPark, 'park')
+        weatherList(
+          allParks.filter((park) => park.parkCode === parkCode)[0].latitude,
+          allParks.filter((park) => park.parkCode === parkCode)[0].longitude)
     }
 
     // if the park's detail button is engaged...
