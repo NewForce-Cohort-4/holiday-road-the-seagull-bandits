@@ -2,6 +2,8 @@ import { getEateries, useEateries } from "./EateryProvider.js";
 import {eatery, eateryDescription, eateryDetails} from "./Eatery.js"
 const eateryDropdownSelector = document.querySelector("#eateries-dropdown");
 
+//Loop through eatery server, build <li> for each eatery
+
 export const renderEateryDropdown = () => {
   getEateries().then(() => {
   let eateries = useEateries()
@@ -16,6 +18,7 @@ export const renderEateryDropdown = () => {
 
 let eateryObject = {}
 
+//Fetch single eatery object
 
 const getEateryDetails = (id) => {
   return fetch(`http://holidayroad.nss.team/eateries/${id}`)
@@ -24,6 +27,8 @@ const getEateryDetails = (id) => {
       eateryObject = parsedEatery
   
 })}
+
+//Render details for selected eatery
 
 document.querySelector("#eateries-dropdown").addEventListener("click", event => {
   getEateryDetails(event.target.id).then(() => {
