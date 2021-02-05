@@ -53,7 +53,6 @@ body {
   max-height: 55vh;
   overflow-x: hidden;
   background-color: var(--dark-sea-green-2);
-  
 }
 
 .data-col {
@@ -71,9 +70,15 @@ body {
 .parks-image {
   background-repeat: no-repeat;
   background-size: contain;
+  height: 30vh;
   /* background-position: center; */
 }
 
 .weather-day {
   text-align: center;
+}
+
+.card-button-container {
+  display: flex;
+  justify-content: space-evenly;
 }
