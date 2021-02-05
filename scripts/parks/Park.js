@@ -12,7 +12,7 @@ export const parkHTML = (selectedPark) => {
     contentTarget.innerHTML = `
         <p>${selectedPark.fullName}</p>
         <div class="parks-image-container overflow-hidden">
-            <div class="parks-image w-100 img-fluid hero-img position-relative bottom-50 right-150" style="background-image: url(${selectedPark.images[imageNum].url})"></div>
+            <div class="parks-image w-100 img-fluid hero-img position-relative bottom-50 right-150" style="background: url(${selectedPark.images[imageNum].url})"></div>
         </div>
         <div id="details-container-parks">
             <button class="parks-detail-button" id="parks-detail--${selectedPark.parkCode}">Details..</button>
