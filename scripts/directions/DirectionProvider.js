@@ -2,7 +2,7 @@ import { settings } from "../Settings.js";
 
 const mapKey = settings.graphhopperKey;
 let foundLocation = [];
-let routeReturned = [];
+export let routeReturned = [];
 
 export let workingLocation = () => {
     return foundLocation.slice()

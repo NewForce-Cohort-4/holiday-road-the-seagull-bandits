@@ -1,32 +1,42 @@
-import { findLocation, workingLocation, locationRoute } from "./DirectionProvider.js";
+import { findLocation, workingLocation, locationRoute, routeReturned } from "./DirectionProvider.js";
 
 
 const roundTrip = (pointStart, pointEnd) => {
     let tripPoints = [];
-    let destinationQuery = ``;
-    let finalDestination = ``;
+    let destinationQuery = "";
+    let finalDestination = "";
     findLocation(pointStart).then(() => {
         destinationQuery = workingLocation();
+        // debugger
     })
     .then(() => {
         console.log(destinationQuery[0].point.lat, destinationQuery[0].point.lng);
         tripPoints.push(destinationQuery[0].point);
     })
     .then(() => {
-        destinationQuery = ``;
+        // destinationQuery = ``;
         findLocation(pointEnd).then(() => {
             destinationQuery = workingLocation();
+            // debugger
         })
         .then(() => {
             console.log(destinationQuery[0].point.lat, destinationQuery[0].point.lng);
-            tripPoints.push(destinationQuery[0].point);
+            tripPoints.splice(1, 0, destinationQuery[0].point);
+            console.log(tripPoints);
+            
+            // debugger
         })
         .then(() => {
             // console.log(tripPoints);
-            finalDestination = locationRoute(tripPoints)
-            return finalDestination
+            locationRoute(tripPoints).then(() => {
+                finalDestination = routeReturned
+                console.log(finalDestination);
+                // debugger
+                return finalDestination
+            })
         })
     })
+
 };
 
 // Archivied
