@@ -28,7 +28,12 @@ export const buildItinerary = (object, target) => {
     if (target === "park") {
         itineraryObject[target] = object
     } else if (target === "eatery") {
-        itineraryObject[target] = object
+        if (itineraryObject[target] === null) {
+            itineraryObject[target] = [object]
+        } else {
+            itineraryObject[target].push(object)
+        }
+        console.log(itineraryObject)
     } else if (target === "attraction") {
         itineraryObject[target] = object
     }
