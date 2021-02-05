@@ -1,5 +1,7 @@
 import { getEateries, useEateries } from "./EateryProvider.js";
 
+
+//Build eatery dropdown
 export const eatery = (eateryObject) => {
   return `
   <li><a class="dropdown-item" href="#" id="${eateryObject.id}">${eateryObject.businessName}</a></li>
@@ -22,6 +24,7 @@ export const eateryDetails = (eatery) => {
 
 }
 
+//Print eatery details
 export const eateryDescription = (pickedEatery) => {
   document.querySelector("#details-container-eatery").innerHTML = `
   <p>${pickedEatery.description}</p>
