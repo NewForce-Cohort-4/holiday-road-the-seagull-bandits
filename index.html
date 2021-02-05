@@ -34,7 +34,7 @@
       <div class="container mt-5">
         <div class="row gx-4">
           <!-- Data Column 1: Parks -->
-          <div class="col-lg-4 col-sm-12 py-3 text-center itinerary-section data-col">
+          <div class="col-lg-3 col-sm-12 py-3 text-center itinerary-section data-col">
             <div class="dropdown">
               <button
                 class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
@@ -55,14 +55,14 @@
             </div>
             <div id="park-container">
               <img class='w-100'
-                src="https://generative-placeholders.glitch.me/image?width=300&height=600&style=cellular-automata&cells=80"
+                src="https://generative-placeholders.glitch.me/image?width=300&height=400&style=cellular-automata&cells=80"
                 alt=""
               />
             </div>
           </div>
 
           <!-- Data Column 2: Bizarraries -->
-          <div class="col-lg-4 col-sm-12 py-3 text-center itinerary-section data-col">
+          <div class="col-lg-3 col-sm-12 py-3 itinerary-section data-col">
             <div class="dropdown">
               <button
                 class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
@@ -79,16 +79,12 @@
                 id="biz-dropdown"
                 role="menu"
               >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+                
               </ul>
             </div>
             <div id="biz-container">
               <img
-                src="https://generative-placeholders.glitch.me/image?width=300&height=600&style=cellular-automata&cells=80"
+                src="https://generative-placeholders.glitch.me/image?width=300&height=400&style=cellular-automata&cells=80"
                 alt=""
                 class="mx-auto"
               />
@@ -96,7 +92,7 @@
           </div>
 
           <!-- Data Column 3: Eateries -->
-          <div class="col-lg-4 col-sm-12 py-3 text-center itinerary-section data-col">
+          <div class="col-lg-3 col-sm-12 py-3 text-center itinerary-section data-col">
             <div class="dropdown">
               <button
                 class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
@@ -112,22 +108,23 @@
                 aria-labelledby="dropdownMenuButton"
                 id="eateries-dropdown"
               >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+                
               </ul>
               <div id="eateries-container">
                 <img
-                  src="https://generative-placeholders.glitch.me/image?width=300&height=600&style=cellular-automata&cells=80"
+                  src="https://generative-placeholders.glitch.me/image?width=300&height=400&style=cellular-automata&cells=80"
                   alt=""
                 />
               </div>
             </div>
           </div>
+          <!-- aside for saved itineraries -->
+          <aside class="col-lg-3 col-sm-12 py-3 text-center itinerary-section data-col" id="aside-saved-itineraries">
+            <div class="scrollable-menu" id="accordion">
+          </aside>
         </div>
-        <div class="col-12" id="weather-container"></div>
+        <div class="col-12" id="save-itinerary-container"></div>
+        <div class="card-group" id="weather-container">Weather goes here</div>
       </div>
     </main>
 
