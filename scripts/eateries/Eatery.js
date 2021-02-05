@@ -11,11 +11,11 @@ export const eatery = (eateryObject) => {
 export const eateryDetails = (eatery) => {
   
     
-    document.querySelector("#eateries-container").innerHTML = `
+    document.querySelector("#eateries-container").innerHTML += `
     <section>
     <h3>${eatery.businessName}</h3>
     <h4>${eatery.city}, ${eatery.state}</h4>
-    <div id="details-container-eatery">
+    <div id="details-container-eatery-${eatery.id}">
     <button class="eatery-detail-button" id="eatery-detail-button--${eatery.id}">Details..</button>
     </div>
     </section>`
@@ -26,7 +26,7 @@ export const eateryDetails = (eatery) => {
 
 //Print eatery details
 export const eateryDescription = (pickedEatery) => {
-  document.querySelector("#details-container-eatery").innerHTML = `
+  document.querySelector(`#details-container-eatery-${pickedEatery.id}`).innerHTML = `
   <p>${pickedEatery.description}</p>
   `
 }
