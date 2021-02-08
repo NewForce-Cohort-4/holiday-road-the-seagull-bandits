@@ -33,7 +33,7 @@ let selectedPark = [];
 const eventHub = document.querySelector(".itinerary-section")
 eventHub.addEventListener("click", eventObject => {
     const allParks = useParks();
-    console.log(eventObject.target)
+    
     // if the parks selector is engaged...
     if (eventObject.target.id.includes("np-select")) {
         // find the parkCode, which was concatenated onto the id when printed to the DOM in the render function above
@@ -48,7 +48,7 @@ eventHub.addEventListener("click", eventObject => {
 
         // Pass selected park into the saved itinerary object
         const savedPark = {
-            name: selectedPark.fullName,
+            fullName: selectedPark.fullName,
             parkCode: selectedPark.parkCode,
             description: selectedPark.description,
             latitude: selectedPark.latitude,
@@ -59,12 +59,18 @@ eventHub.addEventListener("click", eventObject => {
         
         buildItinerary(savedPark, 'park')
         weatherList(
-          allParks.filter((park) => park.parkCode === parkCode)[0].latitude,
-          allParks.filter((park) => park.parkCode === parkCode)[0].longitude)
+          selectedPark.latitude,
+          selectedPark.longitude)
     }
 
     // if the park's detail button is engaged...
-    if (eventObject.target.id.includes("parks")) {
+    if (eventObject.target.id.includes("parks-detail")) {
+        console.log(eventObject.target.id)
+        // find the parkCode, which was concatenated onto the id when printed to the DOM in the render function above
+        const parkCode = eventObject.target.id.split("--")[1]
+        // Use the parkCode to find the park object
+        selectedPark = allParks.filter(park => park.parkCode === parkCode)[0]
+        console.log(parkCode)
         // Pass selected park object into parkDetails function
         parkDetails(selectedPark)
     }
