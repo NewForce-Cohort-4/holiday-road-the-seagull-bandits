@@ -40,14 +40,18 @@ export const buildItinerary = (object, target) => {
     if (target === "park") {
         itineraryObject[target] = object
     } else if (target === "eatery") {
-        itineraryObject[target] = object
-        // if (itineraryObject[target] === null) {
-        //     itineraryObject[target] = [object]
-        // } else {
-        //     itineraryObject[target].push(object)
-        // }
+        // Creates array for each eatery chosen
+        if (itineraryObject[target] === null) {
+            itineraryObject[target] = [object]
+        } else {
+            itineraryObject[target].push(object)
+        }
     } else if (target === "attraction") {
-        itineraryObject[target] = object
+        if (itineraryObject[target] === null) {
+          itineraryObject[target] = [object];
+        } else {
+          itineraryObject[target].push(object);
+        }
     }
 
     let count = 1;
@@ -106,15 +110,21 @@ eventHub.addEventListener("click", eventObject => {
         getItineraries(itineraryID)
         .then(() => {
             let destinations = itineraries
+            let foodStop = destinations.eatery
+            let oddStop = destinations.attraction
             console.log(destinations);
             
             let route = [];
 
             route.push(destinations.park.fullName)
 
-            route.push(destinations.attraction.name)
-   
-            route.push(destinations.eatery.businessName) 
+            for (const attract of oddStop) {
+                route.push(attract.name)
+            }
+            
+            for (const dine of foodStop) {
+                route.push(dine.businessName) 
+            }
 
             console.log(route);
             

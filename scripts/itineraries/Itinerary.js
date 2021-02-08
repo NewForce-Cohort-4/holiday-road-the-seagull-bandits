@@ -18,8 +18,8 @@ export const printItinerary = (itinerary) => {
             <div class="card-body">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">${itinerary.park.fullName}</li>
-                <li class="list-group-item">${itinerary.eatery.businessName}</li>
-                <li class="list-group-item">${itinerary.attraction.name}</li>
+                ${buildEatery(itinerary)}
+                ${buildAttraction(itinerary)}
               </ul>
               <div class="card-button-container">
                 <a href="#" class="btn btn-primary btn-sm" id="view-itinerary--${itinerary.id}">View</a>
@@ -33,3 +33,21 @@ export const printItinerary = (itinerary) => {
     </div>
     `
 }
+
+
+//Returns HTML string from each eatery and attraction object in API
+export const buildEatery = (itinerary) => {
+  let eateryString = itinerary.eatery.map((eatery) => 
+  `<li class="list-group-item">${eatery.businessName}</li>`)
+  // console.log(eateryString.join(""))
+  console.log(eateryString);
+  
+  return eateryString.join("") 
+}
+
+export const buildAttraction = (itinerary) => {
+  let attractionString = itinerary.attraction.map(
+    (attraction) => `<li class="list-group-item">${attraction.name}</li>`
+  );
+  return attractionString.join("")
+};

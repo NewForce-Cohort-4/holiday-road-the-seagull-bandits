@@ -2,548 +2,481 @@
   "itineraries": [
     {
       "park": {
-        "fullName": "Black Canyon Of The Gunnison National Park",
-        "parkCode": "blca",
-        "description": "Big enough to be overwhelming, still intimate enough to feel the pulse of time, Black Canyon of the Gunnison exposes you to some of the steepest cliffs, oldest rock, and craggiest spires in North America. With two million years to work, the Gunnison River, along with the forces of weathering, has sculpted this vertical wilderness of rock, water, and sky.",
-        "latitude": "38.57779869",
-        "longitude": "-107.7242756",
-        "states": "CO",
+        "fullName": "Great Smoky Mountains National Park",
+        "parkCode": "grsm",
+        "description": "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park.",
+        "latitude": "35.60116374",
+        "longitude": "-83.50818326",
+        "states": "NC,TN",
         "images": [
           {
-            "credit": "NPS Photo/Lynch",
-            "title": "Black Canyon near Tomichi Point",
-            "altText": "Black Canyon near Tomichi Point",
-            "caption": "Black Canyon near Tomichi Point",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C81655F-1DD8-B71B-0B4BCFFDB74EE723.jpg"
+            "credit": "Kristina Plaas",
+            "title": "Frosty Morning in Cades Cove",
+            "altText": "A thick layer of frost covers the fields, trees, and mountains in Cades Cove.",
+            "caption": "Wintertime brings a quiet beauty to the Great Smoky Mountains.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C80E3F4-1DD8-B71B-0BFF4F2280EF1B52.jpg"
           },
           {
-            "credit": "NPS Photo/Lynch",
-            "title": "Black Canyon near Painted Wall",
-            "altText": "Black Canyon near Painted Wall",
-            "caption": "Black Canyon near Painted Wall",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C8166E8-1DD8-B71B-0BDEB9A4EEEED807.jpg"
+            "credit": "Kristina Plaas",
+            "title": "\"Smoke\" Rising From the Mountains",
+            "altText": "Wisps of fog hang over the forests in the mountains.",
+            "caption": "The park gets its name from mists that often rise like smoke from the mountains.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C80EC37-1DD8-B71B-0B87F63E8B030D15.jpg"
+          },
+          {
+            "credit": "Kristina Plaas",
+            "title": "A Foggy Morning at Cades Cove Methodist Church",
+            "altText": "Tombstones stand in front of a white, wooden church on a foggy morning.",
+            "caption": "Historic buildings such as churches, gristmills, barns, and homes allow visitors to get a feel for life in the mountains before the national park was created.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C80EDBC-1DD8-B71B-0B743AF911FE7557.jpg"
+          },
+          {
+            "credit": "Danielle Austen, Artist-in-Residence 2015",
+            "title": "The Waters of Roaring Fork Below Grotto Falls",
+            "altText": "Rhododendron bushes line the banks of a stream filled with large boulders.",
+            "caption": "Abundant rainfall means lush forests and beautiful stream scenes in the Great Smoky Mountains.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C80EEE2-1DD8-B71B-0BC2620AAA57D7CA.jpg"
+          },
+          {
+            "credit": "Kristina Plaas",
+            "title": "The \"Wildflower National Park\"",
+            "altText": "A hillside in the forest covered with white trillium flowers",
+            "caption": "Wildflowers, such as these white trillium, can be found blooming from February through November in the park.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C80F02B-1DD8-B71B-0BBC2DFD4E9349E9.jpg"
+          },
+          {
+            "credit": "NPS Photo",
+            "title": "Fall Colors Near Newfound Gap",
+            "altText": "Bright gold and red leaves shine through the fog in a forest.",
+            "caption": "Fall leaf season is one of the busiest times of year in the park.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C80F1CC-1DD8-B71B-0B784AC1BCA74166.jpg"
+          },
+          {
+            "credit": "Sam Hobbs",
+            "title": "Fall Meets Winter",
+            "altText": "Gold and red fall colors fill the valleys while snow coats the mountain tops.",
+            "caption": "In spring and fall, weather in the foothills can be pleasant, while snow and cold rule on the mountain tops.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C80F6C9-1DD8-B71B-0B33F35922A21B3B.jpg"
           }
         ]
       },
-      "eatery": {
-        "businessName": "Occidental Grill & Seafood",
-        "description": "DC is the country's seat of power -- I know this because I've seen one and a half seasons of House of Cards -- and Occidental is where the power goes out for a rib-eye or scallops. And it's been this way since the beginning, with everyone from Amelia Earhart to multiple presidents dining here. While the original was demolished in the '70s, it deserves a spot on this list because it reopened in the '80s super close to its original location and with its rep intact, as both of the presidents named Bush have since partaken of its steakhouse fare.",
-        "state": "DC",
-        "city": "Washington",
-        "id": 10,
-        "ameneties": {
-          "wheelchairAccessible": false,
-          "petFriendly": false,
-          "wifi": false,
-          "diaperFacility": true,
-          "playground": true,
-          "restrooms": true
+      "eatery": [
+        {
+          "businessName": "The Old Clam House",
+          "description": "With respect to the Tadich Grill in SF and Musso & Frank's in Hollywood, our choice is this legendary spot in Bayview. Anyone who has spent time playing soccer on Silver Ave or driving down Bayshore Blvd or just living around SF knows the Old Clam House's iconic sign and that giant clam sitting on the side of the roof and the fact that it's the oldest restaurant in the same location in SF (again, apologies to Tadich). But more people should know about the incredible clam bake cioppino and the amazing kettle bread that's brought out with hot clam juice and the restaurant's own 'Milwaukee steam beer,' which our SF-based editor swears by.",
+          "state": "CA",
+          "city": "San Francisco",
+          "id": 6,
+          "ameneties": {
+            "wheelchairAccessible": false,
+            "petFriendly": false,
+            "wifi": false,
+            "diaperFacility": true,
+            "playground": false,
+            "restrooms": true
+          }
         }
-      },
-      "attraction": {
-        "id": 5,
-        "name": "Cabazon Dinosaurs",
-        "state": "CA",
-        "city": "Cabazon",
-        "description": "In the middle of nowhere, California, stand the Cabazon Dinosaurs. There are two dinosaurs, and they are glorious — not to mention highly photographed by tourists on their way to vacation in Palm Springs. These dinosaurs are also known for their appearance in Pee Wee’s Big Adventure. The long-necked dinosaur also houses stairs and a kitschy toy shop inside its body.",
-        "ameneties": {
-          "souvenirs": true,
-          "restrooms": false
+      ],
+      "attraction": [
+        {
+          "id": 20,
+          "name": "Giant L.L. Bean Boot",
+          "city": "Freeport",
+          "state": "ME",
+          "description": "If this isn’t the most Instagrammed spot in Maine, it should be. The L.L. Bean flagship store has a 16-foot-tall rubber boot in front of it, perfect for posing with however you choose.",
+          "ameneties": {
+            "souvenirs": true,
+            "restrooms": false
+          }
         }
+      ],
+      "id": 1
+    },
+    {
+      "park": {
+        "fullName": "Acadia National Park",
+        "parkCode": "acad",
+        "description": "Acadia National Park protects the natural beauty of the highest rocky headlands along the Atlantic coastline of the United States, an abundance of habitats, and a rich cultural heritage. At 3.5 million visits a year, it's one of the top 10 most-visited national parks in the United States. Visitors enjoy 27 miles of historic motor roads, 158 miles of hiking trails, and 45 miles of carriage roads.",
+        "latitude": "44.409286",
+        "longitude": "-68.247501",
+        "states": "ME",
+        "images": [
+          {
+            "credit": "NPS / Kristi Rugg",
+            "title": "Sunset atop Cadillac Mountain",
+            "altText": "A brilliant sunset filled with hues of blue, red, orange, magenta, and purple highlight the sky.",
+            "caption": "As the tallest point on the eastern seaboard Cadillac Mountain provides fantastic viewpoints.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7B477B-1DD8-B71B-0BCB48E009241BAA.jpg"
+          },
+          {
+            "credit": "NPS / Kristi Rugg",
+            "title": "Acadia's rocky coastline",
+            "altText": "Large puffy clouds dot a brilliant blue sky as wave crash against the rocky coastline of Acadia.",
+            "caption": "Millions of people come to Acadia for our distinctive rocky coastline.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7B45AE-1DD8-B71B-0B7EE131C7DFC2F5.jpg"
+          },
+          {
+            "credit": "NPS / Kristi Rugg",
+            "title": "Climbing The Precipice",
+            "altText": "Two hikers ascend a sheer cliff trail by way of historic iron rung ladders.",
+            "caption": "Whether it's a stroll along Ocean Path or a difficult ascent up The Precipice, there are hiking trails for everyone!",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7B48F9-1DD8-B71B-0BD3B413E58978F8.jpg"
+          },
+          {
+            "credit": "NPS / Kristi Rugg",
+            "title": "Heavy snow-laden trees",
+            "altText": "Hiking tracks carved through three feet of snow wind through a heavy snow-laden forest.",
+            "caption": "During the colder months snows transform our landscape into a winter wonderland.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7B4BEC-1DD8-B71B-0B2CF833F93140FF.jpg"
+          },
+          {
+            "credit": "NPS / Kristi Rugg",
+            "title": "Starviewing",
+            "altText": "A man peers into a telescope as the Milky Way lights up the night sky.",
+            "caption": "With dark skies, Acadia is a fantastic place to come see the stars.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7B4A95-1DD8-B71B-0B8C1868A4135836.jpg"
+          }
+        ]
       },
+      "eatery": [
+        {
+          "businessName": "Northwestern Steakhouse",
+          "description": "When in Iowa, do as the Greeks do. About two hours north of Des Moines lies a steakhouse that's been around in one form or another since the '20s, and the steaks are all prepared one way: Greek-style. This means they're broiled in olive oil and doused with a special blend of Greek seasoning and secret ingredients, and the result is that you can cut your steak with a fork. The walls are plastered with old-timey movie posters featuring Chaplin and John Wayne in a cozy 50-seat space.",
+          "state": "IA",
+          "city": "Mason City",
+          "id": 17,
+          "ameneties": {
+            "wheelchairAccessible": false,
+            "petFriendly": false,
+            "wifi": false,
+            "diaperFacility": true,
+            "playground": false,
+            "restrooms": true
+          }
+        }
+      ],
+      "attraction": [
+        {
+          "id": 33,
+          "name": "Ghostbusters Headquarters",
+          "city": "New York",
+          "state": "NY",
+          "description": "The Tribeca firehouse Hook and Ladder Company 8 was used as the Ghostbusters headquarters in the film Ghostbusters and it’s still around and super easy to get to. This New York City attraction is right off of a subway line and full of nods to its film history. According to Roadside America, when actor Harold Ramis died in 2014, fans set up a memorial on the sidewalk outside of the fire house.",
+          "ameneties": {
+            "souvenirs": false,
+            "restrooms": true
+          }
+        }
+      ],
+      "id": 2
+    },
+    {
+      "park": {
+        "fullName": "Gateway Arch National Park",
+        "parkCode": "jeff",
+        "description": "The Gateway Arch reflects St. Louis' role in the Westward Expansion of the United States during the nineteenth century. The park is a memorial to Thomas Jefferson's role in opening the West, to the pioneers who helped shape its history, and to Dred Scott who sued for his freedom in the Old Courthouse.",
+        "latitude": "38.6258069",
+        "longitude": "-90.1892508",
+        "states": "MO",
+        "images": [
+          {
+            "credit": "NPS Photo/Sue Ford",
+            "title": "West Entrance to the Gateway Arch Visitor Center",
+            "altText": "West Entrance to the Gateway Arch Visitor Center",
+            "caption": "Welcome to the Gateway Arch",
+            "url": "https://www.nps.gov/common/uploads/structured_data/51613AEB-9CC1-53CF-90B993791222A9CB.jpg"
+          },
+          {
+            "credit": "NPS Photo/Sue Ford",
+            "title": "Gateway Arch",
+            "altText": "Gateway Arch",
+            "caption": "Over a million people visit the Gateway Arch each year.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7BE38B-1DD8-B71B-0BBBE77BE3A2180A.jpg"
+          },
+          {
+            "credit": "NPS photo/Jennifer Clark",
+            "title": "The Gateway Arch reflected",
+            "altText": "The Gateway Arch reflected in the waters of of the north pond",
+            "caption": "A walk around the Gateway Arch grounds provide many chances to view the Arch from many different angles.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/348E44EA-F431-FA18-DCB014F7BAA8D225.jpg"
+          },
+          {
+            "credit": "NPS Photo/Sue Ford",
+            "title": "Gateway Arch at Sunrise",
+            "altText": "Gateway Arch at Sunrise",
+            "caption": "The sunrise coming up behind the Gateway Arch.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7BD9B5-1DD8-B71B-0B598216CE4E46D0.jpg"
+          },
+          {
+            "credit": "NPS Photo/Sue Ford",
+            "title": "Reaching for the Clouds",
+            "altText": "Arch and clouds",
+            "caption": "Arch reaching toward the clouds.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7BE538-1DD8-B71B-0BFF11B2DBCF6E6E.jpg"
+          },
+          {
+            "credit": "NPS photo/Jennifer Clark",
+            "title": "Old Courthouse",
+            "altText": "Dred and Harriet Scott statue in front of the columns of the Old Courthouse in the morning light",
+            "caption": "The Old Courthouse",
+            "url": "https://www.nps.gov/common/uploads/structured_data/347D5E5B-B4B0-917D-A3F2C03D113E911E.jpg"
+          },
+          {
+            "credit": "NPS photo/Jennifer Clark",
+            "title": "The Old Courthouse",
+            "altText": "looking across the green lawn in Smith Square to the Old Courthouse",
+            "caption": "The Old Courthouse",
+            "url": "https://www.nps.gov/common/uploads/structured_data/34E649C6-F06F-EB7F-0F9B8B092450772F.jpg"
+          },
+          {
+            "credit": "NPS photo/Jennifer Clark",
+            "title": "Cherry trees in bloom",
+            "altText": "The Gateway Arch and Old Courthouse with a row of pink blooming cherry trees in front",
+            "caption": "The blooming cherry trees in Kiener Plaza provide a wonderful foreground for the Gateway Arch and Old Courthouse in spring.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/34B0AD15-F1FB-85BC-36202E5A42E2AD16.jpg"
+          }
+        ]
+      },
+      "eatery": [
+        {
+          "businessName": "Grand Union Hotel",
+          "description": "Located just east of Great Falls -- with its highfalutin waterfalls and Tiki mermaids -- the small town of Fort Benton itself is so old and iconic that a good portion of the town is a historic district thanks to its rich history of steamboats. The Grand Union Hotel is also on the National Registry of Historic Places, having established itself seven years before Montana even became a state, long before the city fell on hard times thanks to the railroad. Now restored to its original glory, the old hotel offers up a high-end, seasonally based menu in the Union Grille, which specializes in European and Indian twists on Montana classics, and where for 11 months a year (January's a no-no) you can gorge yourself before sleeping it off in one of the hotel's posh rooms.",
+          "state": "MT",
+          "city": "Fort Benton",
+          "id": 28,
+          "ameneties": {
+            "wheelchairAccessible": true,
+            "petFriendly": false,
+            "wifi": false,
+            "diaperFacility": true,
+            "playground": false,
+            "restrooms": true
+          }
+        }
+      ],
+      "attraction": [
+        {
+          "id": 13,
+          "name": "Giant Abraham Lincoln",
+          "state": "ID",
+          "city": "Boise",
+          "description": "You can take a funny picture with an absolutely enormous Abraham Lincoln in Boise, Idaho. People have enjoyed posing with this comically large statute since its unveiling in 2010.",
+          "ameneties": {
+            "souvenirs": false,
+            "restrooms": false
+          }
+        }
+      ],
+      "id": 3
+    },
+    {
+      "park": {
+        "fullName": "New River Gorge National Park and Preserve.",
+        "parkCode": "neri",
+        "description": "A rugged, whitewater river flowing northward through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and recreational opportunities.",
+        "latitude": "37.86878554",
+        "longitude": "-80.99956002",
+        "states": "WV",
+        "images": [
+          {
+            "credit": "Gary Hartley",
+            "title": "Sunrise at Diamond Point",
+            "altText": "sun rising over the New River Gorge",
+            "caption": "Sun rising over the New River Gorge from Diamond Point on the Endless Wall Trail.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8C70-1DD8-B71B-0B00C7B2373E386E.jpg"
+          },
+          {
+            "credit": "Gary Hartley",
+            "title": "New River Gorge Bridge",
+            "altText": "bridge spanning the river",
+            "caption": "The New River Gorge Bridge spans across the New River.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8DAE-1DD8-B71B-0B9B0DDABB90EA30.jpg"
+          },
+          {
+            "credit": "NPS photo/Louise McLaughlin",
+            "title": "Horseshoe Bend from Grandview",
+            "altText": "bend in the river",
+            "caption": "The Horseshoe Bend in the New River from Grandview",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8F1F-1DD8-B71B-0B03B737CD7AE489.jpg"
+          },
+          {
+            "credit": "NPS photo/Louise McLaughlin",
+            "title": "Thurmond Depot",
+            "altText": "railroad tracks and depot",
+            "caption": "Thurmond Depot",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E907D-1DD8-B71B-0B502C95583F514E.jpg"
+          },
+          {
+            "credit": "NPS photo/Carey Woods",
+            "title": "Sandstone Falls",
+            "altText": "waterfall spanning the river",
+            "caption": "Sandstone Falls spans the New River",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E91DA-1DD8-B71B-0B508B9CB06C681E.jpg"
+          },
+          {
+            "credit": "NPS photo/Leah Perkowski-Sisk",
+            "title": "Foggy morning",
+            "altText": "fog and mountains",
+            "caption": "Fog settles in the gorge",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E9441-1DD8-B71B-0BED7246643E6693.jpg"
+          },
+          {
+            "credit": "NPS photo/Dave Bieri",
+            "title": "Rhododendron at Turkey Spur",
+            "altText": "pink rhododendron and view of the gorge and river",
+            "caption": "View from Turkey Spur at Grandview",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E95AB-1DD8-B71B-0BB9F0FCDF99420B.jpg"
+          },
+          {
+            "credit": "Gary Hartley",
+            "title": "Waterfall on Dowdy Creek",
+            "altText": "waterfall and stream",
+            "caption": "Waterfall on Dowdy Creek",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E96DD-1DD8-B71B-0B515196575EBFE2.jpg"
+          }
+        ]
+      },
+      "eatery": [
+        {
+          "businessName": "Deer Park Tavern",
+          "description": "While that one scene in Wayne's World helped define Delaware for an entire generation, every generation of Delawareans knows Deer Park as a historic spot where Edgar Allan Poe once hung out in the 1800s, right before he founded the Baltimore Ravens football team. It continues to operate as a Newark staple -- a place where townies and college students alike enjoy burgers, nachos, and a pint of local-ish Dogfish Head.",
+          "state": "DE",
+          "city": "Newark",
+          "id": 9,
+          "ameneties": {
+            "wheelchairAccessible": false,
+            "petFriendly": false,
+            "wifi": true,
+            "diaperFacility": true,
+            "playground": true,
+            "restrooms": true
+          }
+        }
+      ],
+      "attraction": [
+        {
+          "id": 28,
+          "name": "Spinning Yellow Giant",
+          "city": "Omaha",
+          "state": "NE",
+          "description": "Only in Omaha can you see a 20-foot-tall man wearing a yellow rain coat, rotating in front of a car wash (and in multiple locations). These car washes are also staffed by much smaller animatronic mannequins, all wearing similar yellow raincoats, to delight and terrify you throughout your car wash experience.",
+          "ameneties": {
+            "souvenirs": false,
+            "restrooms": false
+          }
+        }
+      ],
       "id": 4
     },
     {
       "park": {
-        "fullName": "Petrified Forest National Park",
-        "parkCode": "pefo",
-        "description": "Did you know that Petrified Forest is perfect for exploration and discovery? While the park has all the wonders known for a century, there are many new adventures and discoveries to share. There are backcountry hikes into areas never open before such as Red Basin. There are new exhibits that bring the stories to life. Come rediscover Petrified Forest!",
-        "latitude": "34.98387664",
-        "longitude": "-109.7877678",
-        "states": "AZ",
+        "fullName": "New River Gorge National Park and Preserve.",
+        "parkCode": "neri",
+        "description": "A rugged, whitewater river flowing northward through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and recreational opportunities.",
+        "latitude": "37.86878554",
+        "longitude": "-80.99956002",
+        "states": "WV",
         "images": [
           {
-            "credit": "NPS Photo",
-            "title": "Petrified Forest National Wilderness Area",
-            "altText": "Sunlit Painted Desert hills of the Petrified Forest National Wilderness Area",
-            "caption": "Sunrise and sunset are favorite times to view the colorful Painted Desert of the Petrified Forest National Wilderness Area",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C7D8213-1DD8-B71B-0BE4A3B9394FD89A.jpg"
+            "credit": "Gary Hartley",
+            "title": "Sunrise at Diamond Point",
+            "altText": "sun rising over the New River Gorge",
+            "caption": "Sun rising over the New River Gorge from Diamond Point on the Endless Wall Trail.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8C70-1DD8-B71B-0B00C7B2373E386E.jpg"
           },
           {
-            "credit": "NPS Photo",
-            "title": "Painted Desert Inn National Historic Landmark",
-            "altText": "Sunset lights up the Painted Desert Inn National Historic Landmark west side.",
-            "caption": "Sunset lights up the Painted Desert Inn National Historic Landmark west side.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C7D83C9-1DD8-B71B-0B294D0F9ABC4B94.jpg"
+            "credit": "Gary Hartley",
+            "title": "New River Gorge Bridge",
+            "altText": "bridge spanning the river",
+            "caption": "The New River Gorge Bridge spans across the New River.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8DAE-1DD8-B71B-0B9B0DDABB90EA30.jpg"
           },
           {
-            "credit": "NPS Photo",
-            "title": "Agate House",
-            "altText": "Sunlight highlights the colorful petrified wood of Agate House",
-            "caption": "Agate House was built over 900 years ago out of pieces of petrified wood",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C7D8582-1DD8-B71B-0BCCD89452609E15.jpg"
+            "credit": "NPS photo/Louise McLaughlin",
+            "title": "Horseshoe Bend from Grandview",
+            "altText": "bend in the river",
+            "caption": "The Horseshoe Bend in the New River from Grandview",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8F1F-1DD8-B71B-0B03B737CD7AE489.jpg"
           },
           {
-            "credit": "NPS Photo",
-            "title": "Devil's Playground",
-            "altText": "Eroded towers called hoodoos loom above Devil's Playground.",
-            "caption": "Eroded towers called hoodoos loom above Devil's Playground.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85AF53-1DD8-B71B-0BEF5C1DCFA2038C.jpg"
+            "credit": "NPS photo/Louise McLaughlin",
+            "title": "Thurmond Depot",
+            "altText": "railroad tracks and depot",
+            "caption": "Thurmond Depot",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E907D-1DD8-B71B-0B502C95583F514E.jpg"
           },
           {
-            "credit": "NPS Photo/Andrew V. Kearns",
-            "title": "Puerco Pueblo",
-            "altText": "Masonry wall foundations are all that are left of a hundred room pueblo",
-            "caption": "Masonry wall remnants are all that are left of a hundred room pueblo.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85B076-1DD8-B71B-0BE0B8C88713C5B1.jpg"
+            "credit": "NPS photo/Carey Woods",
+            "title": "Sandstone Falls",
+            "altText": "waterfall spanning the river",
+            "caption": "Sandstone Falls spans the New River",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E91DA-1DD8-B71B-0B508B9CB06C681E.jpg"
           },
           {
-            "credit": "NPS Photo",
-            "title": "Painted Desert Community Complex Plaza",
-            "altText": "Painted Desert Community Complex Plaza reveals the long lines of Mid-century style architecture",
-            "caption": "Painted Desert Community Complex Plaza reveals the long lines of Mid-century style architecture",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85B204-1DD8-B71B-0BC9467E64143CF7.jpg"
+            "credit": "NPS photo/Leah Perkowski-Sisk",
+            "title": "Foggy morning",
+            "altText": "fog and mountains",
+            "caption": "Fog settles in the gorge",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E9441-1DD8-B71B-0BED7246643E6693.jpg"
           },
           {
-            "credit": "NPS Photo",
-            "title": "Agate Bridge",
-            "altText": "A large petrified log stretches across a gully",
-            "caption": "This large petrified log stretches across a gully created by erosion.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85B311-1DD8-B71B-0B66904CAD8F3429.jpg"
+            "credit": "NPS photo/Dave Bieri",
+            "title": "Rhododendron at Turkey Spur",
+            "altText": "pink rhododendron and view of the gorge and river",
+            "caption": "View from Turkey Spur at Grandview",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E95AB-1DD8-B71B-0BB9F0FCDF99420B.jpg"
           },
           {
-            "credit": "NPS Photo",
-            "title": "Blue Mesa",
-            "altText": "Summer storm clouds build behind the banded badlands of Blue Mesa",
-            "caption": "Summer storm clouds build behind the banded badlands of Blue Mesa.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85B432-1DD8-B71B-0B6CAB3EAEB4B185.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Blue Mesa Trail",
-            "altText": "Two visitors walk the Blue Mesa Trail between blue, purple, and grey badlands.",
-            "caption": "Visitors enjoy the otherworldly walk along the Blue Mesa.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85B554-1DD8-B71B-0BA79402AD7E7711.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Crystal Forest",
-            "altText": "Many petrified logs are scattered in front of the blue grey badlands at Crystal Forest.",
-            "caption": "Many petrified logs are scattered among the badlands at Crystal Forest.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85B660-1DD8-B71B-0B7B3DE8EF746997.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Grassland Rainbow",
-            "altText": "A full rainbow arches over the open grassland.",
-            "caption": "A full rainbow arches over the open grassland.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85B78F-1DD8-B71B-0B45AC003E5EADA5.jpg"
-          },
-          {
-            "credit": "NPS Photo/Andrew V. Kearns",
-            "title": "Expansion Land Scenery",
-            "altText": "Swirly patterned rocks form a jumbled puzzle in front of red badlands",
-            "caption": "Swirly patterned rocks form a jumbled puzzle in front of red badlands in the expansion lands.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85BA2E-1DD8-B71B-0BCC7E46CF3A5E54.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Flattops",
-            "altText": "Mesas glow red at dawn",
-            "caption": "The Flattops glow red at dawn.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85BB38-1DD8-B71B-0B42EE9151DD2175.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Painted Desert Inn CCC Lyle Bennett Skylight Montage",
-            "altText": "Handpainted glass skylight at the historic",
-            "caption": "Handpainted skylight panels by the CCC  designed by architect Lyle Bennett grace the historic Painted Desert Inn NHL",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85BC99-1DD8-B71B-0B8A5ACCF9B0EC09.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Fred Kabotie Mural at the Painted Desert Inn National Historic Landmark",
-            "altText": "Many Hopi symbols are represented in this mural including eagles, corn, and rain.",
-            "caption": "Many Hopi symbols are featured in this Fred Kabotie mural at the Painted Desert Inn National Historic Landmark",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85BE11-1DD8-B71B-0BFF717908941A06.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Onyx Bridge, Petrified Forest National Wilderness Area",
-            "altText": "a long petrified log stretches across a wash",
-            "caption": "Onyx Bridge is a popular destination for hikers in the Petrified Forest National Wilderness Area's north unit.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85BF65-1DD8-B71B-0BE4289889EAD5F6.jpg"
-          },
-          {
-            "credit": "NPS Photo/Andrew V. Kearns",
-            "title": "Jasper Forest",
-            "altText": "many petrified logs lay on the ground and on eroded pedestals of clay",
-            "caption": "Jasper Forest has some of the most colorful logs in the park.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85C078-1DD8-B71B-0BD76F126AAEA9B3.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Route 66 Alignment",
-            "altText": "An old 1932 Studebaker auto sits near the Route 66 alignment",
-            "caption": "An old 1932 Studebaker auto sits near the Route 66 alignment.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85C190-1DD8-B71B-0B5317830C7F09DE.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Painted Desert Inn Punched Tin Light Fixtur",
-            "altText": "handmade Spanish colonial style punched tin light fixtures were made by the CCC",
-            "caption": "The handmade Spanish-colonial-style punched tin light fixtures were made by the CCC in the 1930s for the Painted Desert Inn NHL.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85C2AA-1DD8-B71B-0BF5792781E5B474.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Summer Solstice Petroglyph at Puerco Pueblo",
-            "altText": "A beam of light touches a petroglyph at Puerco Pueblo on the summer solstice",
-            "caption": "A petroglyph at Puerco Pueblo interacts with the sunlight on the summer solstice.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85C3CB-1DD8-B71B-0B296F95FC7E1D8C.jpg"
-          },
-          {
-            "credit": "NPS Photo/Stuart Holmes",
-            "title": "Mountain Lion Petroglyph",
-            "altText": "a petroglyph pecked into sandstone that represents a mountain lion",
-            "caption": "This ancient petroglyph of a mountain lion has become an icon of the park.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85C4E0-1DD8-B71B-0B7C5271FF8EF1B7.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Paleontological Excavation",
-            "altText": "Researchers dig for fossils in the badlands",
-            "caption": "Researchers dig for fossils in the badlands.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85C6E5-1DD8-B71B-0BC4D0A3D39A6DE2.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Colorful Piece of Petrified Wood",
-            "altText": "yellow and other colors in a piece of brightly colored petrified wood",
-            "caption": "Iron oxide is one of the many trace minerals that create the color of petrified wood.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85CBE9-1DD8-B71B-0B8A5549DD3F55D1.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Sunset on the Tepees",
-            "altText": "striped badlands glow red in the sunset light at the Tepees",
-            "caption": "Striped badlands glow red in the sunset light at the Tepees.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85CD2A-1DD8-B71B-0B4D05CE130B763B.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Kids Day Camp Field Trip with Park Paleontologist Bill Parker",
-            "altText": "Kids excavating in the field with Park Paleontologist Bill Parker",
-            "caption": "Kids excavating in the field with Park Paleontologist Bill Parker",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C85CE61-1DD8-B71B-0B9F5602A4737BCA.jpg"
-          },
-          {
-            "credit": "NPS/Jacob Holgerson",
-            "title": "Milky Way Over Blue Mesa",
-            "altText": "Dark blue sky filled with stars over banded badland.",
-            "caption": "Petrified Forest is now an International Dark Sky Park!",
-            "url": "https://www.nps.gov/common/uploads/structured_data/044BA1B8-1DD8-B71B-0BDCE568A7F4FC60.jpg"
-          },
-          {
-            "credit": "NPS/Hallie Larsen",
-            "title": "Tandem Bicycling at Blue Mesa",
-            "altText": "Two people in colorful clothing on a tandem bicycle with banded badlands in the background",
-            "caption": "Tandem Bicycling at Blue Mesa",
-            "url": "https://www.nps.gov/common/uploads/structured_data/0076C680-AA38-F8ED-1B3B94267707127E.jpg"
+            "credit": "Gary Hartley",
+            "title": "Waterfall on Dowdy Creek",
+            "altText": "waterfall and stream",
+            "caption": "Waterfall on Dowdy Creek",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7E96DD-1DD8-B71B-0B515196575EBFE2.jpg"
           }
         ]
       },
-      "eatery": {
-        "businessName": "Grand Union Hotel",
-        "description": "Located just east of Great Falls -- with its highfalutin waterfalls and Tiki mermaids -- the small town of Fort Benton itself is so old and iconic that a good portion of the town is a historic district thanks to its rich history of steamboats. The Grand Union Hotel is also on the National Registry of Historic Places, having established itself seven years before Montana even became a state, long before the city fell on hard times thanks to the railroad. Now restored to its original glory, the old hotel offers up a high-end, seasonally based menu in the Union Grille, which specializes in European and Indian twists on Montana classics, and where for 11 months a year (January's a no-no) you can gorge yourself before sleeping it off in one of the hotel's posh rooms.",
-        "state": "MT",
-        "city": "Fort Benton",
-        "id": 28,
-        "ameneties": {
-          "wheelchairAccessible": true,
-          "petFriendly": false,
-          "wifi": false,
-          "diaperFacility": true,
-          "playground": false,
-          "restrooms": true
+      "eatery": [
+        {
+          "businessName": "Katz's Delicatessen",
+          "description": "New York is the entry point for many immigrants as they make their way into the US, and back before the Lower East Side had a Whole Foods, it was home to many of those same immigrants and their families. Katz's has been a linchpin of the neighborhood for over 100 years. It's a place where tourists and locals unite over one thing: the consumption of outrageously large meat sandwiches. If there's anything more American than a panoply of cultures, ages, and social classes coming together over food, I don't know what it is.",
+          "state": "NY",
+          "city": "New York",
+          "id": 34,
+          "ameneties": {
+            "wheelchairAccessible": false,
+            "petFriendly": false,
+            "wifi": true,
+            "diaperFacility": true,
+            "playground": false,
+            "restrooms": true
+          }
         }
-      },
-      "attraction": {
-        "id": 36,
-        "name": "Frankenstein’s Grave",
-        "city": "Canton",
-        "state": "OH",
-        "description": "This grave is rumored to belong to Dr. Frankenstein. According to one post on Roadside America, 'Rumor has it that a Timken family member in Germany wrote to his successful cousin in America and told him how the grave site of Victor Frankenstein was being defaced and spit upon in their small town. The American Timken and founder of Timken Roller Bearings paid for the remains of the body to be flown to Canton to give Dr. Frankenstein a peaceful resting place.'",
-        "ameneties": {
-          "souvenirs": true,
-          "restrooms": false
+      ],
+      "attraction": [
+        {
+          "id": 3,
+          "name": "Elvis Memorial Chapel",
+          "state": "AZ",
+          "city": "Apache Junction",
+          "description": "You wouldn’t ever think Elvis Presley would have a place in Arizona, but “the King” lives on in Apache Junction. The Elvis Memorial Chapel survived the devastating fires at the former Apacheland Movie Ranch and has since been reconstructed at the Superstition Mountain Museum.",
+          "ameneties": {
+            "souvenirs": true,
+            "restrooms": true
+          }
+        },
+        {
+          "id": 25,
+          "name": "Town Named Hot Coffee",
+          "city": "Hot Coffee",
+          "state": "MS",
+          "description": "There is a town named Hot Coffee in Mississippi, but if you blink you might miss it. The teeny tiny town is now just a green highway sign and an abandoned grocery store. People often stop to take photos that reaffirm their love of java.",
+          "ameneties": {
+            "souvenirs": true,
+            "restrooms": true
+          }
         }
-      },
+      ],
       "id": 5
-    },
-    {
-      "park": {
-        "fullName": "Kenai Fjords National Park",
-        "parkCode": "kefj",
-        "description": "At the edge of the Kenai Peninsula lies a land where the ice age lingers. Nearly 40 glaciers flow from the Harding Icefield, Kenai Fjords' crowning feature. Wildlife thrives in icy waters and lush forests around this vast expanse of ice. Sugpiaq people relied on these resources to nurture a life entwined with the sea. Today, shrinking glaciers bear witness to the effects of our changing climate.",
-        "latitude": "59.81804414",
-        "longitude": "-150.106502",
-        "states": "AK",
-        "images": [
-          {
-            "credit": "USGS/Bruce Molnia",
-            "title": "Bear Glacier Aerial",
-            "altText": "aerial image of Bear Glacier",
-            "caption": "Bear Glacier is the largest of nearly 40 glaciers that flow from the Harding Icefield.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C798EAB-1DD8-B71B-0BC4BEFB197F2C90.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Aialik Bay Kayakers",
-            "altText": "kayakers in front of a tidewater glacier",
-            "caption": "Kayakers enjoy the spectacular scenery in the fjords in Aialik Bay.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE352-1DD8-B71B-0B35831ADF254DE0.jpg"
-          },
-          {
-            "credit": "NPS Photo/Thoresen",
-            "title": "Humpback Whale Breach",
-            "altText": "a humpback whale breaches",
-            "caption": "A humpback whale breaches in Kenai Fjords National Park",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE50D-1DD8-B71B-0B23431BC04ACB33.jpg"
-          },
-          {
-            "credit": "USGS/Bruce Molnia",
-            "title": "Above Bear Glacier",
-            "altText": "aerial view of Bear Glacier from Harding Icefield",
-            "caption": "Flightseeing over the Harding Icefield provides amazing opportunities to view glaciers, like Bear Glacier, from a different perspective.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE88C-1DD8-B71B-0B3F02FD7F30F1AF.jpg"
-          },
-          {
-            "credit": "NPS Photo/Jim Pfeiffenberger",
-            "title": "Exit Glacier View",
-            "altText": "visitors at accessible overlook of Exit Glacier and Exit Creek.",
-            "caption": "A stroll to Glacier View provides a nice overlook of Exit Glacier as part of a 1 mile accessible walk.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/3C7DEEE0-1DD8-B71B-0B7B85B29F07C371.jpg"
-          }
-        ]
-      },
-      "eatery": {
-        "businessName": "Pancake Pantry",
-        "description": "There are actually two different Pancake Pantrys in TN, opened a few years apart from one another (strangely, they have different owners), but the one in Nashville is our pick for the most iconic. From the hordes of people who wait in line to be seated there like extras in a Portlandia episode, to its status as one of America's best breakfast spots, to the generations of Tennesseeans who have frequented the place, Pancake Pantry is legendary. The sweet potato pancakes with homemade cinnamon cream syrup are the flapjacks to get, though you can also go offbeat with the Sante Fe, a cornbread pancake with cheddar, bacon, and green chile cooked right into it. No matter which of the 23 varieties you choose, you can't go wrong.",
-        "state": "TN",
-        "city": "Nashville",
-        "id": 44,
-        "ameneties": {
-          "wheelchairAccessible": false,
-          "petFriendly": false,
-          "wifi": true,
-          "diaperFacility": true,
-          "playground": false,
-          "restrooms": true
-        }
-      },
-      "attraction": {
-        "id": 35,
-        "name": "Enchanted Highway",
-        "city": "Regent",
-        "state": "ND",
-        "description": "You may think that there is a whole lot of nothing in North Dakota, but you would be wrong. The Enchanted Highway, a creation by retired school teacher and metal sculptor Gary Greff, features fantastical sculptures along an empty road in Regent, North Dakota. Visitors can see enormous birds, grasshoppers, deer jumping fences, fish, seaweed, and even more incredible designs. Greff has also opened the Enchanted Castle Hotel, where guests can stay while taking in his creative constructions, because other hotels may be hard to find. It truly is in the middle of nowhere.",
-        "ameneties": {
-          "souvenirs": false,
-          "restrooms": false
-        }
-      },
-      "id": 6
-    },
-    {
-      "park": {
-        "fullName": "Hot Springs National Park",
-        "parkCode": "hosp",
-        "description": "Hot Springs National Park has a rich cultural past. The grand architecture of our historic bathhouses is equally matched by the natural curiosities that have been drawing people here for hundreds of years. Ancient thermal springs, mountain views, incredible geology, forested hikes, and abundant creeks – all in the middle of town – make Hot Springs National Park a unique and beautiful destination.",
-        "latitude": "34.52414366",
-        "longitude": "-93.06332936",
-        "states": "AR",
-        "images": [
-          {
-            "credit": "Mitch Smith",
-            "title": "Bathhouse Row Evening",
-            "altText": "A pink sky above gentle white buildings",
-            "caption": "Bathhouse Row as the sun sets",
-            "url": "https://www.nps.gov/common/uploads/structured_data/C0D8DFDD-F151-C5B0-3004B0088C98BA5A.jpg"
-          },
-          {
-            "credit": "Mitch Smith",
-            "title": "Hot Water Cascade",
-            "altText": "Misty water evaporating from a cascade",
-            "caption": "The Arlington Lawn holds a beautiful thermal cascade",
-            "url": "https://www.nps.gov/common/uploads/structured_data/C13C707D-B623-9D92-5CF6C917AA1B9078.jpg"
-          },
-          {
-            "credit": "Mitch Smith",
-            "title": "Bathhouse Row From The Waters",
-            "altText": "A sky view of large bathhouse buildings",
-            "caption": "The Waters offers a great view of bathhouse row",
-            "url": "https://www.nps.gov/common/uploads/structured_data/C11CC032-E6FC-33A3-A850BBC58A6DBD3C.jpg"
-          },
-          {
-            "credit": "NPS photo",
-            "title": "Bathhouse Row",
-            "altText": "Stone entrance pillars in front of a row of four bathouses",
-            "caption": "Visitors and patients come to take the thermal waters",
-            "url": "https://www.nps.gov/common/uploads/structured_data/2417D601-FF9E-BFD8-5C6BD4375064FAD1.jpg"
-          },
-          {
-            "credit": "NPS Photo",
-            "title": "Take A Hike!",
-            "altText": "Close up of a hiking boot on the trail a hiker in the distance",
-            "caption": "Hot Springs National Park has 26 miles of hiking trails to explore.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/23BF1E9D-A964-3BFE-BDEBFB703DE79463.jpeg"
-          },
-          {
-            "credit": "NPS photo",
-            "title": "Hiker at bridge Whittington Park Creek",
-            "altText": "Hiker sits at the edge of the creek, with a bridge in the background",
-            "caption": "Visitors hike and enjoy the cool shady places in the park.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/23D55284-B7DD-D42F-4689A73DDA1DC0B9.jpg"
-          },
-          {
-            "credit": "NPS photo Mark David Artist In Residence 2015",
-            "title": "Bridge with fall colors",
-            "altText": "Stone bridge surrounded by brilliant yellow and green leaves",
-            "caption": "The park is beautiful year round",
-            "url": "https://www.nps.gov/common/uploads/structured_data/243E69E8-B5AB-6E14-DDD7BF3A6FEFE437.jpg"
-          },
-          {
-            "credit": "Mitch Smith",
-            "title": "Thermal Water Trough",
-            "altText": "A stone tough in a green forest with water flowing down",
-            "caption": "Along the hiking trails of Hot Springs Mountain are active troughs for directing the thermal water",
-            "url": "https://www.nps.gov/common/uploads/structured_data/C14F1D4A-FAF7-A20F-163F60EBF0B127F9.jpg"
-          },
-          {
-            "credit": "NPS photo",
-            "title": "Visitor at the edge of the pools of the hot water cascade",
-            "altText": "women sitting on the stone wall at the hot water cascade as the vapor rises",
-            "caption": "The natural curiosity of the thermal water can be seen and experienced",
-            "url": "https://www.nps.gov/common/uploads/structured_data/245F811B-A97D-0C77-41A3D373703FB1FB.jpg"
-          },
-          {
-            "credit": "Mitch Smith",
-            "title": "Balanced Rock Overlook",
-            "altText": "Sun setting over rolling hills",
-            "caption": "Along Sunset Trail is the spectacular view over Balanced Rock",
-            "url": "https://www.nps.gov/common/uploads/structured_data/C189E13D-FC70-0C3B-AFE8915E5B27F434.jpg"
-          },
-          {
-            "credit": "Mitch Smith",
-            "title": "Mountain Tower and Pagoda",
-            "altText": "A tower and pagoda on the side of a mountain",
-            "caption": "For the best views of the Ouachita mountains, the tower and pagoda offer amazing and different sights",
-            "url": "https://www.nps.gov/common/uploads/structured_data/C1A14390-C25E-5A82-BA89C2004C3A526B.jpg"
-          }
-        ]
-      },
-      "eatery": {
-        "businessName": "Joe's Stone Crab",
-        "description": "Since Florida is home to many, many elderly people, it's fairly surprising we were able to find a restaurant older than most of them. While Joe's has opened up outposts across the country, the original has remained popular in Miami Beach since way back when. The only thing more famous than the iconic stone crabs are the people who've dined there: according to a book written about the restaurant, they include the likes of 'Sinatra, Ali, and Jennifer Lopez.' It's true, one of the judges from the 11th season of American Idol has eaten here!",
-        "state": "FL",
-        "city": "Miami",
-        "id": 11,
-        "ameneties": {
-          "wheelchairAccessible": false,
-          "petFriendly": false,
-          "wifi": false,
-          "diaperFacility": true,
-          "playground": true,
-          "restrooms": true
-        }
-      },
-      "attraction": {
-        "id": 20,
-        "name": "Giant L.L. Bean Boot",
-        "city": "Freeport",
-        "state": "ME",
-        "description": "If this isn’t the most Instagrammed spot in Maine, it should be. The L.L. Bean flagship store has a 16-foot-tall rubber boot in front of it, perfect for posing with however you choose.",
-        "ameneties": {
-          "souvenirs": true,
-          "restrooms": false
-        }
-      },
-      "id": 7
-    },
-    {
-      "park": {
-        "fullName": "Bryce Canyon National Park",
-        "parkCode": "brca",
-        "description": "Hoodoos (irregular columns of rock) exist on every continent, but here is the largest concentration found anywhere on Earth. Situated along a high plateau at the top of the Grand Staircase, the park's high elevations include numerous life communities, fantastic dark skies, and geological wonders that defy description.",
-        "latitude": "37.58399144",
-        "longitude": "-112.1826689",
-        "states": "UT",
-        "images": [
-          {
-            "credit": "NPS Photo / Peter Densmore",
-            "title": "Bryce Amphitheater from Inspiration Point",
-            "altText": "A red rock landscape and plateau forest glows with the morning sun",
-            "caption": "Viewpoints of the iconic Bryce Amphitheater are located along the first 3 miles of the park road and are a popular destination at sunrise.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/61F08520-E14F-18F2-BF5F3D89482631BD.jpg"
-          },
-          {
-            "credit": "NPS Photo / Keith Moore",
-            "title": "Winter sunrise at Sunset Point",
-            "altText": "Snow blankets a red rock landscape of tall rock spires beneath an early morning sky",
-            "caption": "Here at 8,000' (2438 m) winter comes early and stays late. Snow transforms the landscape and requires seasonal closures in some areas and trails.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/600067EF-E1B2-18B1-6120394EC23521DB.jpg"
-          },
-          {
-            "credit": "Derek Demeter",
-            "title": "Milky Way over the Hoodoos",
-            "altText": "The center of the Milky Way galaxy is seen rising above a horizon of forest and red rock spires",
-            "caption": "Bryce Canyon's clean air and dark night skies are some of its most precious and vulnerable resources. Full moon nights also provide a unique experience of seeing the park after dark.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/613FFA94-B2F5-FBBF-090B96462B7CAB18.jpg"
-          },
-          {
-            "credit": "NPS Photo / Peter Densmore",
-            "title": "Queen's Garden Trail",
-            "altText": "A lone white rock tower stands surrounded by red rock walls and forest along a trail",
-            "caption": "More strenuous trails below the rim provide up-close views of the hoodoo rock spires, while easier walks along the rim give perspective from above.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/60400EC2-B3DA-DAD5-18BF97EA3403B692.jpg"
-          },
-          {
-            "credit": "NPS Photo / Peter Densmore",
-            "title": "Bristlecone Loop trail near Yovimpa Point",
-            "altText": "Red and white rock cliffs lightly dusted with snow with a forest atop them and a long view beyond",
-            "caption": "The park's highest elevations at its southern end and backcountry areas provide views of over 100 miles (161 km) atop high steep cliffs.",
-            "url": "https://www.nps.gov/common/uploads/structured_data/609317A5-D0B1-4B67-C2413B5852192FB6.jpg"
-          }
-        ]
-      },
-      "eatery": {
-        "businessName": "Mayflower Cafe",
-        "description": "Mississippi has a taste for Gulf fish, and Mayflower's current owner (his dad's uncle co-owned it back in the '30s) says it's unlike the seafood available anywhere else. Chalk it up to the brackish water the fish live in, with both fresh and saltwater. The legions of customers seem to enjoy it -- the redfish is the most popular menu item, and it's served up with shrimp & oysters or a sauteed soft-shell crab. And while the food is distinctly Mississippi, the decor is straight out of a New York diner of old, with black-and-white tile floors from the '30s and mirrored walls.",
-        "state": "MS",
-        "city": "Jackson",
-        "id": 26,
-        "ameneties": {
-          "wheelchairAccessible": true,
-          "petFriendly": false,
-          "wifi": false,
-          "diaperFacility": true,
-          "playground": false,
-          "restrooms": true
-        }
-      },
-      "attraction": {
-        "id": 20,
-        "name": "Giant L.L. Bean Boot",
-        "city": "Freeport",
-        "state": "ME",
-        "description": "If this isn’t the most Instagrammed spot in Maine, it should be. The L.L. Bean flagship store has a 16-foot-tall rubber boot in front of it, perfect for posing with however you choose.",
-        "ameneties": {
-          "souvenirs": true,
-          "restrooms": false
-        }
-      },
-      "id": 8
     }
   ]
 }
