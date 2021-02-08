@@ -3,6 +3,7 @@ import { eateryDetails } from '../eateries/Eatery.js'
 import { parkHTML } from '../parks/Park.js'
 import { printBizContent } from '../attractions/attraction.js'
 import { weatherList } from '../weather/WeatherProvider.js'
+import { roadTrip } from "../directions/printDirections.js";
 
 let itineraries = [];
 
@@ -99,6 +100,31 @@ eventHub.addEventListener("click", eventObject => {
             eateryDetails(itinerary.eatery)
             // print weather
             weatherList(itinerary.park.latitude, itinerary.park.longitude)
+        })
+    } else if (eventObject.target.id.includes("map-itinerary")) {
+        let itineraryID = eventObject.target.id.split("--")[1]
+        getItineraries(itineraryID)
+        .then(() => {
+            let destinations = itineraries
+            console.log(destinations);
+            
+            let route = [];
+
+            route.push(destinations.park.fullName)
+
+            route.push(destinations.attraction.name)
+   
+            route.push(destinations.eatery.businessName) 
+
+            console.log(route);
+            
+            roadTrip(route)
+            
+            // console.log(itenary.park);
+            // console.log(itinerary.eatery);
+            // console.log(itenary.attraction);
+            
+            
         })
     }
 })

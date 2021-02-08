@@ -23,13 +23,13 @@ export const findLocation = (locationArray) => {
     return Promise.all(fetchArray)
     .then((locationResult) => {        
         foundLocation = locationResult
-        console.log(locationResult);
+        // console.log(locationResult);
     })
 } 
 
 export const locationRoute = (pointArray) => {
     let urlString = "";
-    console.log(pointArray);
+    // console.log(pointArray);
 
     // Loop through parameter array, returned by findLocations.
     for (let i = 0; i < pointArray.length; i++) {

@@ -23,6 +23,7 @@ export const printItinerary = (itinerary) => {
               </ul>
               <div class="card-button-container">
                 <a href="#" class="btn btn-primary btn-sm" id="view-itinerary--${itinerary.id}">View</a>
+                <a href="#" class="btn btn-primary btn-sm" id="map-itinerary--${itinerary.id}">Map</a>
                 <a href="#" class="btn btn-primary btn-sm" id="delete-itinerary--${itinerary.id}">Delete</a>
               </div>
             </div>
