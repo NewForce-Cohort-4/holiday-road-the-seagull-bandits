@@ -58,6 +58,8 @@ export const buildItinerary = (object, target) => {
         
         if (itineraryObject[key] === null) {
             continue
+        } else if (saveButtonTarget.innerHTML !== null) {
+            continue
         } else if (itineraryObject[key] !== null && count === Object.keys(itineraryObject).length) {
             saveButtonTarget.innerHTML = '<button class="btn btn-primary" type="button" id="button-save-itinerary">Save Itinerary</button>'
         }
@@ -75,9 +77,9 @@ const saveItinerary = itinerary => {
     })
 }
 
-const updateItinerary = itinerary => {
+const updateItinerary = (itinerary, itineraryID) => {
       
-    return fetch('http://localhost:8088/itineraries', {
+    return fetch(`http://localhost:8088/itineraries/${itineraryID}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
@@ -99,7 +101,8 @@ eventHub.addEventListener("click", eventObject => {
         saveItinerary(itineraryObject)
         .then(itineraryList)
     } else if (eventObject.target.id.includes("button-update-itinerary")) {
-        updateItinerary(itineraryObject)
+        let itineraryID = eventObject.target.id.split("--")[1]
+        updateItinerary(itineraryObject, itineraryID)
         .then(itineraryList)
     } else if (eventObject.target.id.includes("delete-itinerary")) {
         let itineraryID = eventObject.target.id.split("--")[1]
@@ -113,15 +116,19 @@ eventHub.addEventListener("click", eventObject => {
             // print national parks details
             parkHTML(itinerary.park)
             itineraryObject["park"] = itinerary.park
-            console.log(document.querySelector('#park-container').div)
+            
             // print attractions details
-            document.getElementById("biz-container").innerHTML = printBizContent(itinerary.attraction)
+            console.log(itinerary.attraction)
+            document.querySelector("#biz-container").innerHTML = ""
+            itinerary.attraction.forEach(attraction => document.querySelector("#biz-container").innerHTML += printBizContent(attraction))
             itineraryObject["attraction"] = itinerary.attraction
             // print eatery details
-            eateryDetails(itinerary.eatery)
+            console.log(itinerary.eatery)
+            document.querySelector("#eateries-container").innerHTML = ""
+            itinerary.eatery.forEach(eatery => eateryDetails(eatery))
             itineraryObject["eatery"] = itinerary.eatery
             // print "update" (save) button
-            saveButtonTarget.innerHTML = '<button class="btn btn-primary" type="button" id="button-update-itinerary">Update Itinerary</button>'
+            saveButtonTarget.innerHTML = `<button class="btn btn-primary" type="button" id="button-update-itinerary--${itineraryID}">Update Itinerary</button>`
             // print weather
             weatherList(itinerary.park.latitude, itinerary.park.longitude)
         })

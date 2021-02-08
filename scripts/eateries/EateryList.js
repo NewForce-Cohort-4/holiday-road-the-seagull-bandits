@@ -45,14 +45,14 @@ document.querySelector("#eateries-dropdown").addEventListener("click", event => 
 
 
 
-  document.querySelector("main").addEventListener("click", event => {
+document.querySelector("main").addEventListener("click", event => {
 
-   if(event.target.id.includes("eatery")) {
-    let id = event.target.id.split("--")[1]
-    getEateryDetails(id).then(() => {
-      eateryDescription(eateryObject);
-    })
-    
-   }
-    });
+  if(event.target.id.includes("eatery")) {
+  let id = event.target.id.split("--")[1]
+  getEateryDetails(id).then(() => {
+    eateryDescription(eateryObject);
+  })
+  
+  }
+});
  
