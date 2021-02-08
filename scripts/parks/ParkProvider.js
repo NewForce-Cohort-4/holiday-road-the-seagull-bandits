@@ -1,3 +1,5 @@
+import { settings } from '../Settings.js'
+
 let parks = []
 
 export const useParks = () => {
@@ -5,7 +7,7 @@ export const useParks = () => {
 }
 
 export const getParks = () => {
-    let url = `https://developer.nps.gov/api/v1/parks?limit=468&api_key=nbqiP9vQgAXyqsicMSTlQjnowutK0w7ftOsBaFk6`
+    let url = `https://developer.nps.gov/api/v1/parks?limit=468&api_key=${settings.npsKey}`
     return fetch(url)
         .then(response => response.json())
         .then(parsedParks => {
