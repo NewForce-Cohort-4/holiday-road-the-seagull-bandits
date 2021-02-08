@@ -15,7 +15,7 @@ export const eateryDetails = (eatery) => {
       <div class="card-header mt-1"><h3>${eatery.businessName}</h3></div>
       <div class="card-body">
           <div class="card-title mt-1">${eatery.city}, ${eatery.state}</div>
-          <div class="col-6 mx-auto mt-3" id="details-container-eatery-${eatery.id}">
+          <div id="details-container-eatery-${eatery.id}">
             <button class="eatery-detail-button btn btn-primary" type="button" id="eatery-detail-button--${eatery.id}">Details..</button>
           </div>
       </div>
