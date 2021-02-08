@@ -1,6 +1,6 @@
 import { getEateries, useEateries } from "./EateryProvider.js";
 import {eatery, eateryDescription, eateryDetails} from "./Eatery.js"
-import { buildItinerary } from "./../itineraries/ItineraryProvider.js"
+import { buildItinerary } from "./../itineraries/ItineraryEventHub.js"
 
 const eateryDropdownSelector = document.querySelector("#eateries-dropdown");
 
@@ -45,14 +45,14 @@ document.querySelector("#eateries-dropdown").addEventListener("click", event => 
 
 
 
-  document.querySelector("main").addEventListener("click", event => {
+document.querySelector("main").addEventListener("click", event => {
 
-   if(event.target.id.includes("eatery")) {
-    let id = event.target.id.split("--")[1]
-    getEateryDetails(id).then(() => {
-      eateryDescription(eateryObject);
-    })
-    
-   }
-    });
+  if(event.target.id.includes("eatery")) {
+  let id = event.target.id.split("--")[1]
+  getEateryDetails(id).then(() => {
+    eateryDescription(eateryObject);
+  })
+  
+  }
+});
  

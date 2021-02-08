@@ -15,7 +15,7 @@ export const roadTrip = (destinationsArray) => {
             // console.log(tripPoints);
             locationRoute(destinationQuery).then(() => {
                 finalDestination = routeReturned
-                console.log(finalDestination);
+                
                 return finalDestination
             }).then(() => {
                 directions(finalDestination)

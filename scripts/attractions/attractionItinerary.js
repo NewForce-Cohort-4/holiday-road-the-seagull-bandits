@@ -1,7 +1,7 @@
 import { getAttractions, useAttractions, parseAttractions } from "./AttractionProvider.js";
 import {  } from "./AttractionSelect.js";
 import { printBizContent } from "./attraction.js";
-import { buildItinerary } from "./../itineraries/ItineraryProvider.js"
+import { buildItinerary } from "./../itineraries/ItineraryEventHub.js"
 
 const bizContainer = document.getElementById("biz-container")
 const bizList = document.getElementById("biz-dropdown")

@@ -21,9 +21,6 @@ export const eateryDetails = (eatery) => {
       </div>
     </div>
     `
-    
-    ;
-
 }
 
 //Print eatery details

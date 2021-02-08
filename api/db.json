@@ -477,6 +477,110 @@
         }
       ],
       "id": 5
+    },
+    {
+      "park": {
+        "fullName": "Arches National Park",
+        "parkCode": "arch",
+        "description": "Visit Arches to discover a landscape of contrasting colors, land forms, and textures unlike any other in the world. The park has over 2,000 natural stone arches and hundreds of soaring pinnacles, massive rock fins, and giant balanced rocks. This red-rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
+        "latitude": "38.72261844",
+        "longitude": "-109.5863666",
+        "states": "UT",
+        "images": [
+          {
+            "credit": "NPS/Neal Herbert",
+            "title": "The Organ with Potholes",
+            "altText": "a stone monolith reflected in standing water",
+            "caption": "The Organ rock formation is reflected in one of many natural potholes.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C79850F-1DD8-B71B-0BC4A88BA85DE6B0.jpg"
+          },
+          {
+            "credit": "NPS Photo",
+            "title": "Double O Arch",
+            "altText": "a broad, red arch with rock pinnacles in the background",
+            "caption": "Double O Arch is one of many large arches in the Devils Garden area",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C79931C-1DD8-B71B-0BF201E3DB540D04.jpg"
+          },
+          {
+            "credit": "NPS Photo",
+            "title": "Delicate Arch",
+            "altText": "a stone arch",
+            "caption": "Delicate Arch is perhaps the most famous natural arch in the world.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0B2B-1DD8-B71B-0BE0E26B0740AA6B.jpg"
+          },
+          {
+            "credit": "NPS/Wonderly",
+            "title": "Milky Way over the Garden of Eden",
+            "altText": "the Milky Way arcs above silhouetted stone pinnacles",
+            "caption": "Arches offers some excellent night sky viewing.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0C49-1DD8-B71B-0B460D58D6E83B40.jpg"
+          },
+          {
+            "credit": "NPS/Herbert",
+            "title": "Park Avenue Trail",
+            "altText": "two hikers descend a broad wash with tall rock walls on either side.",
+            "caption": "The Park Avenue trail is one of many hiking trails at Arches, ranging from easy to strenuous.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0DE5-1DD8-B71B-0BFBE720788EF4A3.jpg"
+          }
+        ]
+      },
+      "eatery": [
+        {
+          "businessName": "McClard's BBQ",
+          "description": "Five generations of the McClard family have been working the smoker since they opened their spot in the '20s, which is a type of nepotism no one who's ever eaten their ribs or chicken is complaining about. One of the most popular dishes is the tamale spread, a vast pile of food that includes tamales covered in Fritos, beans, chopped meat, onions, and cheese -- it was initially thrown together in the early '70s to help one of the dishwashers sober up, but eventually caught on with the customers. It's uniquely McClard's and uniquely Arkansas.",
+          "state": "AR",
+          "city": "Hot Springs",
+          "id": 5,
+          "ameneties": {
+            "wheelchairAccessible": false,
+            "petFriendly": false,
+            "wifi": true,
+            "diaperFacility": true,
+            "playground": true,
+            "restrooms": true
+          }
+        },
+        {
+          "businessName": "Big Bob Gibson Bar-B-Que",
+          "description": "Alabama's place in the great lexicon of barbecue rests squarely on the shoulders of one man: Big Bob Gibson. While other BBQ regions were dancing with brisket and ribs and pork, in 1925, Gibson started smoking chicken in a hand-dug pit in his backyard and serving folks on a picnic table. (He also served pork, but that's such a side note to the chicken here.) In addition to making chicken the star -- rather than the weird, dry BBQ’d poultry coated in a congealed sauce that's served at every company picnic ever -- Gibson rolled out his now-famous, peppery mayo-cider vinegar-lemon white sauce that’s synonymous with Alabama barbecue.",
+          "state": "AL",
+          "city": "Decatur",
+          "id": 2,
+          "ameneties": {
+            "wheelchairAccessible": false,
+            "petFriendly": true,
+            "wifi": false,
+            "diaperFacility": false,
+            "playground": false,
+            "restrooms": true
+          }
+        }
+      ],
+      "attraction": [
+        {
+          "id": 3,
+          "name": "Elvis Memorial Chapel",
+          "state": "AZ",
+          "city": "Apache Junction",
+          "description": "You wouldn’t ever think Elvis Presley would have a place in Arizona, but “the King” lives on in Apache Junction. The Elvis Memorial Chapel survived the devastating fires at the former Apacheland Movie Ranch and has since been reconstructed at the Superstition Mountain Museum.",
+          "ameneties": {
+            "souvenirs": true,
+            "restrooms": true
+          }
+        },
+        {
+          "id": 4,
+          "name": "Snake World",
+          "state": "AR",
+          "city": "Berryville",
+          "description": "The next time you’re in Arkansas, be sure to stop by Snake World! Owner Dale Ertel claims that the tourist attraction houses over 70 snakes, which is even more than the Little Rock Zoo. The reviews on Trip Advisor are all glowing, and warn visitors not to be dissuaded by Snake World’s sketchy exterior.",
+          "ameneties": {
+            "souvenirs": true,
+            "restrooms": true
+          }
+        }
+      ],
+      "id": 6
     }
   ]
 }

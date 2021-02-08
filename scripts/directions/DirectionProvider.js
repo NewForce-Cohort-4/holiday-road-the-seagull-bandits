@@ -42,7 +42,7 @@ export const locationRoute = (pointArray) => {
         } else {
             urlString += `&point=${xCoordinate},${yCoordinate}`
         }
-        console.log(urlString);
+        
     }
     // Make API call with urlString of coordinates
     return fetch(`https://graphhopper.com/api/1/route?${urlString}&vehicle=car&locale=us&instructions=true&calc_points=true&key=${mapKey}`)

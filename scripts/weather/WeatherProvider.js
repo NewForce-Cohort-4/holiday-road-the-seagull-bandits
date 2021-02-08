@@ -18,14 +18,10 @@ export const getWeather = (lat, long) => {
     .then((response) => response.json())
     .then((parsedWeather) => {
       weather = parsedWeather;
-      console.log(weather)
     });
 };
 
-
-
 const weatherContainer = document.querySelector("#weather-container");
-
 
 // Prints weather to DOM
 export const weatherList = (lat,long) => {;
@@ -33,8 +29,6 @@ export const weatherList = (lat,long) => {;
     let weatherHTMLString = "";
     weatherHTMLString = buildWeatherString(weather);
     weatherContainer.innerHTML = weatherHTMLString;
-
-
   })
 };
 
