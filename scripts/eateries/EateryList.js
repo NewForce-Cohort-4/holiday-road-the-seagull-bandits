@@ -33,6 +33,10 @@ const getEateryDetails = (id) => {
 //Render details for selected eatery
 
 document.querySelector("#eateries-dropdown").addEventListener("click", event => {
+  let element = document.getElementById("eatery-placeholder")
+  if (typeof(element) != 'undefined' && element != null){
+    element.remove()
+  }
   getEateryDetails(event.target.id).then(() => {
     eateryDetails(eateryObject)
     buildItinerary(eateryObject, 'eatery')
