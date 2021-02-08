@@ -21,12 +21,12 @@ const eventHTML = (event) => {
     } else {
         htmlString += `<p><strong>Cost:</strong>${event.feeinfo}</p>`
     }
-    console.log(htmlString)
+    
     return htmlString += '</div>'
 }
 
 export const eventsModal = (parkCode) => {
-    console.log(parkCode)
+    
     let popUpTarget = document.querySelector(".modal-content"); 
     let eventsPopUpHTML = ""
 

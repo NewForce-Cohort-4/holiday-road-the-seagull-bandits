@@ -1,6 +1,6 @@
 import { eventsModal } from './ParkEvents.js'
 import { parkHTML, parkDetails } from './Park.js'
-import { buildItinerary } from "./../itineraries/ItineraryProvider.js"
+import { buildItinerary } from "./../itineraries/ItineraryEventHub.js"
 import {weatherList} from "../weather/WeatherProvider.js"
 import { useParks } from './ParkProvider.js'
 
@@ -12,8 +12,7 @@ let selectedPark = [];
 const eventHub = document.querySelector(".itinerary-section")
 eventHub.addEventListener("click", eventObject => {
     const allParks = useParks();
-    console.log(eventObject.target.id)
-    
+        
     // if the parks selector is engaged...
     if (eventObject.target.id.includes("np-select")) {
         // find the parkCode, which was concatenated onto the id when printed to the DOM in the render function above

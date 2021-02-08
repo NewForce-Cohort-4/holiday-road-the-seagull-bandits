@@ -1,6 +1,6 @@
 import { getEateries, useEateries } from "./EateryProvider.js";
 import {eatery, eateryDescription, eateryDetails} from "./Eatery.js"
-import { buildItinerary } from "./../itineraries/ItineraryProvider.js"
+import { buildItinerary } from "./../itineraries/ItineraryEventHub.js"
 
 const eateryDropdownSelector = document.querySelector("#eateries-dropdown");
 

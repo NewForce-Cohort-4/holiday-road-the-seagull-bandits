@@ -5,7 +5,8 @@ import {renderEateryDropdown} from "./eateries/EateryList.js"
 import { itineraryList } from './itineraries/ItineraryList.js'
 import { parksSelector } from './parks/ParkSelector.js'
 import { } from './parks/ParkEventHub.js'
-
+import { } from './itineraries/ItineraryEventHub.js'
+import { } from "./directions/printDirections.js";
 
 // Make fetch call and build drop down list.
 attractionSelect();

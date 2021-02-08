@@ -74,6 +74,28 @@ body {
   text-align: center;
 }
 
+#weather-container {
+  text-align: center !important;
+  background-color: var(--dark-sea-green-2);
+  min-height: 4rem;
+}
+
+#weather-header {
+  display: flex !important;
+  justify-content: space-evenly !important;
+}
+
+#direction-container {
+  background-color: var(--dark-sea-green-2);
+  min-height: 4rem;
+  max-height: 15rem;
+  overflow-x: hidden;
+}
+
+.direction-header {
+  background-color: var(--dark-sea-green);
+}
+
 .card-button-container {
   display: flex;
   justify-content: space-evenly;
