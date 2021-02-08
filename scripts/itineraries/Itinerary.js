@@ -23,6 +23,7 @@ export const printItinerary = (itinerary) => {
               </ul>
               <div class="card-button-container">
                 <a href="#" class="btn btn-primary btn-sm" id="view-itinerary--${itinerary.id}">View</a>
+                <a href="#" class="btn btn-primary btn-sm" id="map-itinerary--${itinerary.id}">Map</a>
                 <a href="#" class="btn btn-primary btn-sm" id="delete-itinerary--${itinerary.id}">Delete</a>
               </div>
             </div>
@@ -36,10 +37,12 @@ export const printItinerary = (itinerary) => {
 
 //Returns HTML string from each eatery and attraction object in API
 export const buildEatery = (itinerary) => {
-  let eateryString = itinerary.eatery.map(eatery => 
+  let eateryString = itinerary.eatery.map((eatery) => 
   `<li class="list-group-item">${eatery.businessName}</li>`)
   // console.log(eateryString.join(""))
-return eateryString.join("") 
+  console.log(eateryString);
+  
+  return eateryString.join("") 
 }
 
 export const buildAttraction = (itinerary) => {
