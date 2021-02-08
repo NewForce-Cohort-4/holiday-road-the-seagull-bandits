@@ -18,7 +18,7 @@ export const printItinerary = (itinerary) => {
             <div class="card-body">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">${itinerary.park.name}</li>
-                <li class="list-group-item">${itinerary.eatery.businessName}</li>
+                ${buildEatery(itinerary)}
                 <li class="list-group-item">${itinerary.attraction.name}</li>
               </ul>
               <div class="card-button-container">
@@ -31,4 +31,12 @@ export const printItinerary = (itinerary) => {
       </div>
     </div>
     `
+}
+
+
+
+export const buildEatery = (itinerary) => {
+  let eateryString = itinerary.eatery.forEach(eatery => 
+  `<li class="list-group-item">${eatery.businessName}</li>`)
+return eateryString  
 }
