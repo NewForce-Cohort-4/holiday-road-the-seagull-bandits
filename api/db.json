@@ -470,6 +470,80 @@
         }
       },
       "id": 7
+    },
+    {
+      "park": {
+        "fullName": "Bryce Canyon National Park",
+        "parkCode": "brca",
+        "description": "Hoodoos (irregular columns of rock) exist on every continent, but here is the largest concentration found anywhere on Earth. Situated along a high plateau at the top of the Grand Staircase, the park's high elevations include numerous life communities, fantastic dark skies, and geological wonders that defy description.",
+        "latitude": "37.58399144",
+        "longitude": "-112.1826689",
+        "states": "UT",
+        "images": [
+          {
+            "credit": "NPS Photo / Peter Densmore",
+            "title": "Bryce Amphitheater from Inspiration Point",
+            "altText": "A red rock landscape and plateau forest glows with the morning sun",
+            "caption": "Viewpoints of the iconic Bryce Amphitheater are located along the first 3 miles of the park road and are a popular destination at sunrise.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/61F08520-E14F-18F2-BF5F3D89482631BD.jpg"
+          },
+          {
+            "credit": "NPS Photo / Keith Moore",
+            "title": "Winter sunrise at Sunset Point",
+            "altText": "Snow blankets a red rock landscape of tall rock spires beneath an early morning sky",
+            "caption": "Here at 8,000' (2438 m) winter comes early and stays late. Snow transforms the landscape and requires seasonal closures in some areas and trails.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/600067EF-E1B2-18B1-6120394EC23521DB.jpg"
+          },
+          {
+            "credit": "Derek Demeter",
+            "title": "Milky Way over the Hoodoos",
+            "altText": "The center of the Milky Way galaxy is seen rising above a horizon of forest and red rock spires",
+            "caption": "Bryce Canyon's clean air and dark night skies are some of its most precious and vulnerable resources. Full moon nights also provide a unique experience of seeing the park after dark.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/613FFA94-B2F5-FBBF-090B96462B7CAB18.jpg"
+          },
+          {
+            "credit": "NPS Photo / Peter Densmore",
+            "title": "Queen's Garden Trail",
+            "altText": "A lone white rock tower stands surrounded by red rock walls and forest along a trail",
+            "caption": "More strenuous trails below the rim provide up-close views of the hoodoo rock spires, while easier walks along the rim give perspective from above.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/60400EC2-B3DA-DAD5-18BF97EA3403B692.jpg"
+          },
+          {
+            "credit": "NPS Photo / Peter Densmore",
+            "title": "Bristlecone Loop trail near Yovimpa Point",
+            "altText": "Red and white rock cliffs lightly dusted with snow with a forest atop them and a long view beyond",
+            "caption": "The park's highest elevations at its southern end and backcountry areas provide views of over 100 miles (161 km) atop high steep cliffs.",
+            "url": "https://www.nps.gov/common/uploads/structured_data/609317A5-D0B1-4B67-C2413B5852192FB6.jpg"
+          }
+        ]
+      },
+      "eatery": {
+        "businessName": "Mayflower Cafe",
+        "description": "Mississippi has a taste for Gulf fish, and Mayflower's current owner (his dad's uncle co-owned it back in the '30s) says it's unlike the seafood available anywhere else. Chalk it up to the brackish water the fish live in, with both fresh and saltwater. The legions of customers seem to enjoy it -- the redfish is the most popular menu item, and it's served up with shrimp & oysters or a sauteed soft-shell crab. And while the food is distinctly Mississippi, the decor is straight out of a New York diner of old, with black-and-white tile floors from the '30s and mirrored walls.",
+        "state": "MS",
+        "city": "Jackson",
+        "id": 26,
+        "ameneties": {
+          "wheelchairAccessible": true,
+          "petFriendly": false,
+          "wifi": false,
+          "diaperFacility": true,
+          "playground": false,
+          "restrooms": true
+        }
+      },
+      "attraction": {
+        "id": 20,
+        "name": "Giant L.L. Bean Boot",
+        "city": "Freeport",
+        "state": "ME",
+        "description": "If this isn’t the most Instagrammed spot in Maine, it should be. The L.L. Bean flagship store has a 16-foot-tall rubber boot in front of it, perfect for posing with however you choose.",
+        "ameneties": {
+          "souvenirs": true,
+          "restrooms": false
+        }
+      },
+      "id": 8
     }
   ]
 }
