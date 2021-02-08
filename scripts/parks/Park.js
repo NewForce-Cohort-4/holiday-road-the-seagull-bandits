@@ -15,8 +15,10 @@ export const parkHTML = (selectedPark) => {
             <div class="card-body">
                 <p class="card-text">${selectedPark.states}</p>
                 <div id="details-container-parks">
+                <div class="buttons">
                     <button class="parks-detail-button btn btn-primary" id="parks-detail--${selectedPark.parkCode}">Details...</button>
                     <button class="parks-events-button btn btn-primary" id="parks-events--${selectedPark.parkCode}" data-bs-toggle="modal" data-bs-target="#parkEventsModal">Events</button>
+                </div>
                 </div>
             </div>
         </div>  
@@ -25,9 +27,13 @@ export const parkHTML = (selectedPark) => {
 
 // Create and export a function to generate the HTML for the park's details once the user clicks the "Details" button.
 export const parkDetails = (selectedPark) => {
-    console.log(selectedPark)
+    
     document.querySelector("#details-container-parks").innerHTML = `
     <p style="text-align: left;">${selectedPark.description}</p>
+    <div class="buttons">
+        <button class="parks-detail-button btn btn-primary" id="parks-close-detail--${selectedPark.parkCode}">Close details...</button>
+        <button class="parks-events-button btn btn-primary" id="parks-events--${selectedPark.parkCode}" data-bs-toggle="modal" data-bs-target="#parkEventsModal">Events</button>
+    </div>
     `
 }
 

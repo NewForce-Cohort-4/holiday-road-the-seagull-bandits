@@ -43,7 +43,7 @@ eventHub.addEventListener("click", eventObject => {
     }
 
     // if the park's detail button is engaged...
-    if (eventObject.target.id.includes("parks-detail")) {
+    else if (eventObject.target.id.includes("parks-detail")) {
         
         // find the parkCode, which was concatenated onto the id when printed to the DOM in the render function above
         const parkCode = eventObject.target.id.split("--")[1]
@@ -53,8 +53,22 @@ eventHub.addEventListener("click", eventObject => {
         // Pass selected park object into parkDetails function
         parkDetails(selectedPark)
     }
+    
+    // if the park's close detail button is engaged...
+    else if (eventObject.target.id.includes("parks-close-detail")) {
+        
+        // find the parkCode, which was concatenated onto the id when printed to the DOM in the render function above
+        const parkCode = eventObject.target.id.split("--")[1]
+        // Use the parkCode to find the park object
+        document.querySelector("#details-container-parks").innerHTML = `
+        <div class="buttons">
+            <button class="parks-detail-button btn btn-primary" id="parks-close-detail--${parkCode}">Close details...</button>
+            <button class="parks-events-button btn btn-primary" id="parks-events--${parkCode}" data-bs-toggle="modal" data-bs-target="#parkEventsModal">Events</button>
+        </div>
+    `
+    }
 
-    if (eventObject.target.id.includes("parks-events")) {
+    else if (eventObject.target.id.includes("parks-events")) {
         // find the parkCode, which was concatenated onto the id when printed to the DOM in the render function above
         const parkCode = eventObject.target.id.split("--")[1]
         

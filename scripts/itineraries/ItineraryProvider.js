@@ -6,6 +6,16 @@ import { weatherList } from '../weather/WeatherProvider.js'
 
 let itineraries = [];
 
+let itineraryObject = {
+    park: null ,
+    eatery: null ,
+    attraction: null
+}
+
+const eventHub = document.querySelector('main')
+
+const saveButtonTarget = document.querySelector('#save-itinerary-container')
+
 export const useItineraries = () => {
     return itineraries.slice()
 }
@@ -23,16 +33,6 @@ export const getItineraries = (id) => {
             itineraries = parsedItineraries
         })
 }
-
-let itineraryObject = {
-    park: null ,
-    eatery: null ,
-    attraction: null
-}
-
-const eventHub = document.querySelector('main')
-
-const saveButtonTarget = document.querySelector('#save-itinerary-container')
 
 export const buildItinerary = (object, target) => {
     
@@ -58,8 +58,6 @@ export const buildItinerary = (object, target) => {
         
         if (itineraryObject[key] === null) {
             continue
-        } else if (saveButtonTarget.innerHTML !== null) {
-            continue
         } else if (itineraryObject[key] !== null && count === Object.keys(itineraryObject).length) {
             saveButtonTarget.innerHTML = '<button class="btn btn-primary" type="button" id="button-save-itinerary">Save Itinerary</button>'
         }
@@ -77,17 +75,17 @@ const saveItinerary = itinerary => {
     })
 }
 
-const updateItinerary = (itinerary, itineraryID) => {
+// const updateItinerary = (itinerary, itineraryID) => {
       
-    return fetch(`http://localhost:8088/itineraries/${itineraryID}`, {
-        method: "PUT",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(itinerary)
+//     return fetch(`http://localhost:8088/itineraries/${itineraryID}`, {
+//         method: "PUT",
+//         headers: {
+//             "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify(itinerary)
         
-    })
-}
+//     })
+// }
 
 const deleteItinerary = itineraryID => {
     return fetch(`http://localhost:8088/itineraries/${itineraryID}`, {
@@ -95,14 +93,18 @@ const deleteItinerary = itineraryID => {
     })
 }
 
+// const refresh = () => {
+
+//     document.querySelector("#park-container").innerHTML = '<img class="w-100" src="./images/clipart3358926.png" alt="">'
+//     document.querySelector("#biz-container").innerHTML = '<img src="images/attractions.png" alt="" class="w-100" id="biz-placeholder">'
+//     document.querySelector("#eateries-container").innerHTML = '<img class="w-100" src="./images/eateries.png" alt="" id="eatery-placeholder">'
+
+// }
+
 eventHub.addEventListener("click", eventObject => {
 
     if (eventObject.target.id === "button-save-itinerary") {
         saveItinerary(itineraryObject)
-        .then(itineraryList)
-    } else if (eventObject.target.id.includes("button-update-itinerary")) {
-        let itineraryID = eventObject.target.id.split("--")[1]
-        updateItinerary(itineraryObject, itineraryID)
         .then(itineraryList)
     } else if (eventObject.target.id.includes("delete-itinerary")) {
         let itineraryID = eventObject.target.id.split("--")[1]
@@ -118,20 +120,24 @@ eventHub.addEventListener("click", eventObject => {
             itineraryObject["park"] = itinerary.park
             
             // print attractions details
-            console.log(itinerary.attraction)
             document.querySelector("#biz-container").innerHTML = ""
             itinerary.attraction.forEach(attraction => document.querySelector("#biz-container").innerHTML += printBizContent(attraction))
             itineraryObject["attraction"] = itinerary.attraction
             // print eatery details
-            console.log(itinerary.eatery)
             document.querySelector("#eateries-container").innerHTML = ""
             itinerary.eatery.forEach(eatery => eateryDetails(eatery))
             itineraryObject["eatery"] = itinerary.eatery
             // print "update" (save) button
-            saveButtonTarget.innerHTML = `<button class="btn btn-primary" type="button" id="button-update-itinerary--${itineraryID}">Update Itinerary</button>`
+            
+            updateButtonTarget.innerHTML = `<button class="btn btn-primary" type="button" name="update-button" id="button-update-itinerary--${itineraryID}">Update Itinerary</button>`
             // print weather
             weatherList(itinerary.park.latitude, itinerary.park.longitude)
         })
-    }
+    } 
+    // else if (eventObject.target.id.includes("button-update-itinerary")) {
+    //     let itineraryID = eventObject.target.id.split("--")[1]
+    //     updateItinerary(itineraryObject, itineraryID)
+    //     .then(itineraryList)
+    // }
 })
 
