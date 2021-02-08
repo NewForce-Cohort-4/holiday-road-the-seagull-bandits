@@ -1,9 +1,6 @@
 /* ---------------------------------------------------------------- */
 /* import functions from other modules */
 import { getParks, useParks } from './ParkProvider.js'
-import { parkHTML, parkDetails } from './Park.js'
-import { buildItinerary } from "./../itineraries/ItineraryProvider.js"
-import {weatherList} from "../weather/WeatherProvider.js"
 
 const contentTarget = document.querySelector("#park-dropdown")
 
@@ -23,55 +20,7 @@ const render = parksList => {
         <li value="0"><a class="dropdown-item" href="#">Please select a National Park...</a></li>
             ${
                 parksList.map(park => {return `<li><a class="dropdown-item" id="np-select_${park.parkCode}" href="#">${park.name}</a></li>`})
-            }`
+            }
+        `
 }
 
-/* ---------------------------------------------------------------- */
-/* Create an event listener for the dropdown selector and details button */
-let selectedPark = [];
-
-const eventHub = document.querySelector(".itinerary-section")
-eventHub.addEventListener("click", eventObject => {
-    const allParks = useParks();
-    
-    // if the parks selector is engaged...
-    if (eventObject.target.id.includes("np-select")) {
-        // find the parkCode, which was concatenated onto the id when printed to the DOM in the render function above
-        const parkCode = eventObject.target.id.split("_")[1]
-        // Use the parkCode to find the park object
-        selectedPark = allParks.filter(park => park.parkCode === parkCode)[0]
-        // Pass selected park object into HTML generator function
-        parkHTML(selectedPark)// 
-
-        // Pass selected park's location into the weather forecast function
-        // weatherApp(selectedPark.addresses[0])
-
-        // Pass selected park into the saved itinerary object
-        const savedPark = {
-            fullName: selectedPark.fullName,
-            parkCode: selectedPark.parkCode,
-            description: selectedPark.description,
-            latitude: selectedPark.latitude,
-            longitude: selectedPark.longitude,
-            states: selectedPark.states,
-            images: selectedPark.images,
-        }
-        
-        buildItinerary(savedPark, 'park')
-        weatherList(
-          selectedPark.latitude,
-          selectedPark.longitude)
-    }
-
-    // if the park's detail button is engaged...
-    if (eventObject.target.id.includes("parks-detail")) {
-        console.log(eventObject.target.id)
-        // find the parkCode, which was concatenated onto the id when printed to the DOM in the render function above
-        const parkCode = eventObject.target.id.split("--")[1]
-        // Use the parkCode to find the park object
-        selectedPark = allParks.filter(park => park.parkCode === parkCode)[0]
-        console.log(parkCode)
-        // Pass selected park object into parkDetails function
-        parkDetails(selectedPark)
-    }
-})

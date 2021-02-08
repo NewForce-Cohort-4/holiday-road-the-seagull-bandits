@@ -40,11 +40,6 @@ export const buildItinerary = (object, target) => {
         itineraryObject[target] = object
     } else if (target === "eatery") {
         itineraryObject[target] = object
-        // if (itineraryObject[target] === null) {
-        //     itineraryObject[target] = [object]
-        // } else {
-        //     itineraryObject[target].push(object)
-        // }
     } else if (target === "attraction") {
         itineraryObject[target] = object
     }
@@ -71,6 +66,18 @@ const saveItinerary = itinerary => {
     })
 }
 
+const updateItinerary = itinerary => {
+      
+    return fetch('http://localhost:8088/itineraries', {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(itinerary)
+        
+    })
+}
+
 const deleteItinerary = itineraryID => {
     return fetch(`http://localhost:8088/itineraries/${itineraryID}`, {
         method: "DELETE",
@@ -81,6 +88,9 @@ eventHub.addEventListener("click", eventObject => {
 
     if (eventObject.target.id === "button-save-itinerary") {
         saveItinerary(itineraryObject)
+        .then(itineraryList)
+    } else if (eventObject.target.id.includes("button-update-itinerary")) {
+        updateItinerary(itineraryObject)
         .then(itineraryList)
     } else if (eventObject.target.id.includes("delete-itinerary")) {
         let itineraryID = eventObject.target.id.split("--")[1]
@@ -93,10 +103,16 @@ eventHub.addEventListener("click", eventObject => {
             let itinerary = itineraries
             // print national parks details
             parkHTML(itinerary.park)
+            itineraryObject["park"] = itinerary.park
+            console.log(document.querySelector('#park-container').div)
             // print attractions details
             document.getElementById("biz-container").innerHTML = printBizContent(itinerary.attraction)
+            itineraryObject["attraction"] = itinerary.attraction
             // print eatery details
             eateryDetails(itinerary.eatery)
+            itineraryObject["eatery"] = itinerary.eatery
+            // print "update" (save) button
+            saveButtonTarget.innerHTML = '<button class="btn btn-primary" type="button" id="button-update-itinerary">Update Itinerary</button>'
             // print weather
             weatherList(itinerary.park.latitude, itinerary.park.longitude)
         })
