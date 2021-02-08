@@ -3,6 +3,7 @@ import { settings } from "../Settings.js";
 const mapKey = settings.graphhopperKey;
 let foundLocation = [];
 export let routeReturned = [];
+let printFrame = "";
 
 export let workingLocation = () => {
     // console.log(foundLocation);
@@ -48,5 +49,6 @@ export const locationRoute = (pointArray) => {
     .then(r => r.json())
     .then((routeResult) => {
         routeReturned = routeResult
+        printFrame = `https://graphhopper.com/maps/?point=${urlString}&locale=en-us&vehicle=car&weighting=fastest&elevation=true&turn_costs=true&use_miles=false&layer=Omniscale`
     })
 };

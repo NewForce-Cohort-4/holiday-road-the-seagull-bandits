@@ -1,10 +1,11 @@
 import { findLocation, workingLocation, locationRoute, routeReturned } from "./DirectionProvider.js";
-
+import { directions } from "./direction.js";
 
 const roadTrip = (destinationsArray) => {
     // let tripPoints = [];
     let destinationQuery = "";
 	let finalDestination = "";
+    let finalFrame = "";
 	
 		findLocation(destinationsArray)
 		.then(() => {
@@ -16,9 +17,11 @@ const roadTrip = (destinationsArray) => {
                 finalDestination = routeReturned
                 console.log(finalDestination);
                 return finalDestination
+            }).then(() => {
+                directions(finalDestination)
+                // visualDirections()
             })
         })
-    
 };
 
 let stops = ["Nashville","New River Gorge National Park and Preserve", "Big Bend National Park", "White House Replica"]
