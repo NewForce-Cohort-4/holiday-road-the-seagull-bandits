@@ -55,23 +55,19 @@ body {
   background-color: var(--dark-sea-green-2);
 }
 
+.scrollable-itinerary {
+  height: max-content;
+  max-height: 50%;
+  overflow-x: hidden;
+  background-color: var(--dark-sea-green-2);
+}
+
 .data-col {
   background-color: var();
 }
 
 .col-button {
   background-color: var(--dark-sea-green-2) !important;
-}
-
-.parks-image-container {
-  overflow: hidden;
-}
-
-.parks-image {
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30vh;
-  /* background-position: center; */
 }
 
 .weather-day {
@@ -103,4 +99,10 @@ body {
 .card-button-container {
   display: flex;
   justify-content: space-evenly;
+}
+
+#save-itinerary-container {
+  display: flex;
+  justify-content: flex-end;
+  border-left:1px solid darkgrey;
 }

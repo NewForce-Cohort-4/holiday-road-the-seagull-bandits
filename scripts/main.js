@@ -13,9 +13,6 @@ attractionSelect();
 // Make fetch call and loop through entries to print drop-down list selection to the DOM container.
 findAttraction();
 
-
-
-
 renderEateryDropdown()
 
 // Render the National Parks dropdown selector

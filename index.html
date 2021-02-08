@@ -32,96 +32,112 @@
 
       <!-- Begin Data Columns -->
       <div class="container mt-5">
-        <div class="row gx-4">
-          <!-- Data Column 1: Parks -->
-          <div class="col-lg-3 col-sm-12 py-3 text-center itinerary-section data-col">
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
-                type="button"
-                id="parksMenuButton"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                National Parks
-              </button>
-              <ul
-                class="dropdown-menu w-100 scrollable-menu"
-                aria-labelledby="dropdownMenuButton"
-                id="park-dropdown"
-              >
-                <!-- selection options go here -->
-              </ul>
-            </div>
-            <div id="park-container">
-              <img class='w-100'
-                src="https://generative-placeholders.glitch.me/image?width=300&height=400&style=cellular-automata&cells=80"
-                alt=""
-              />
-            </div>
-          </div>
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="row gx-4" id="itinerary">
+            
+              <!-- Data Column 1: Parks -->
+              <div class="col-lg-4 col-sm-12 py-3 text-center itinerary-section data-col">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
+                    type="button"
+                    id="parksMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    National Parks
+                  </button>
+                  <ul
+                    class="dropdown-menu w-100 scrollable-menu"
+                    aria-labelledby="dropdownMenuButton"
+                    id="park-dropdown"
+                  >
+                    <!-- selection options go here -->
+                  </ul>
+                </div>
+                <div id="park-container">
+                  <img class='w-100'
+                    src="https://generative-placeholders.glitch.me/image?width=300&height=400&style=cellular-automata&cells=80"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-          <!-- Data Column 2: Bizarraries -->
-          <div class="col-lg-3 col-sm-12 py-3 itinerary-section data-col">
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
-                type="button"
-                id="bizMenuButton"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Bizarraries
-              </button>
-              <ul
-                class="dropdown-menu w-100 scrollable-menu" 
-                aria-labelledby="dropdownMenuButton"
-                id="biz-dropdown"
-                role="menu"
-              >
-                
-              </ul>
-            </div>
-            <div id="biz-container">
-              <img
-                src="https://generative-placeholders.glitch.me/image?width=300&height=400&style=cellular-automata&cells=80"
-                alt=""
-                class="mx-auto"
-              />
-            </div>
-          </div>
+              <!-- Data Column 2: Bizarraries -->
+              <div class="col-lg-4 col-sm-12 py-3 itinerary-section data-col">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
+                    type="button"
+                    id="bizMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Bizarraries
+                  </button>
+                  <ul
+                    class="dropdown-menu w-100 scrollable-menu" 
+                    aria-labelledby="dropdownMenuButton"
+                    id="biz-dropdown"
+                    role="menu"
+                  >
+                    
+                  </ul>
+                </div>
+                <div id="biz-container">
+                  <img
+                    src="https://generative-placeholders.glitch.me/image?width=300&height=400&style=cellular-automata&cells=80"
+                    alt=""
+                    class='w-100'
+                  />
+                </div>
+              </div>
 
-          <!-- Data Column 3: Eateries -->
-          <div class="col-lg-3 col-sm-12 py-3 text-center itinerary-section data-col">
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
-                type="button"
-                id="eatMenuButton"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Eateries
-              </button>
-              <ul
-                class="dropdown-menu w-100 scrollable-menu"
-                aria-labelledby="dropdownMenuButton"
-                id="eateries-dropdown"
-              >
-                
-              </ul>
-              <div id="eateries-container">
-                <img
-                  src="https://generative-placeholders.glitch.me/image?width=300&height=400&style=cellular-automata&cells=80"
-                  alt=""
-                />
+              <!-- Data Column 3: Eateries -->
+              <div class="col-lg-4 col-sm-12 py-3 text-center itinerary-section data-col">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary w-100 dropdown-toggle mb-3 col-button"
+                    type="button"
+                    id="eatMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Eateries
+                  </button>
+                  <ul
+                    class="dropdown-menu w-100 scrollable-menu"
+                    aria-labelledby="dropdownMenuButton"
+                    id="eateries-dropdown"
+                  >
+                    
+                  </ul>
+                </div>
+                <div id="eateries-container">
+                  <img class='w-100'
+                    src="https://generative-placeholders.glitch.me/image?width=300&height=400&style=cellular-automata&cells=80"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- aside for saved itineraries -->
+            </div>
+            <div class="row" id="save-itinerary-button">
+              <div id="save-itinerary-container">
               </div>
             </div>
           </div>
-          <!-- aside for saved itineraries -->
-          <aside class="col-lg-3 col-sm-12 py-3 text-center itinerary-section data-col" id="aside-saved-itineraries">
-            <div class="scrollable-menu" id="accordion">
-          </aside>
+          <div class="col-lg-3">
+            <aside class="itinerary-section data-col" id="aside-saved-itineraries">
+              <div class="scrollable-itinerary" id="accordion">
+              </div>
+            </aside>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card-group" id="weather-container">Weather goes here
+          </div>
         </div>
         <div class="col-12" id="save-itinerary-container"></div>
         <!-- Weather Container -->
