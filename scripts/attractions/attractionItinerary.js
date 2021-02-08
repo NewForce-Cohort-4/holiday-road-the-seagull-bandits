@@ -17,7 +17,7 @@ export const makeAttraction = (selectedAttraction) => {
     // findAttraction();
     for (const singleAttract of attractions) {
         if (selectedAttraction.target.id === `biz-${singleAttract.id}`) {
-            bizContainer.innerHTML = printBizContent(singleAttract)
+            bizContainer.innerHTML += printBizContent(singleAttract)
             buildItinerary(singleAttract, 'attraction')
         }
     }
@@ -28,6 +28,10 @@ const list = (totalAttractions) => {
 };
 
 bizList.addEventListener("click", (e) => {
+    let element = document.getElementById("biz-placeholder");
+    if (typeof element != "undefined" && element != null) {
+      element.remove();
+    }
     makeAttraction(e)
     
 })
